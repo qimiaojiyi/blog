@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>无标题js文档</title>
+
+</head>
+<body>
+<input type='file' id='img'>
+<img id='one'/>
+</body>
+</html>
+<script type="text/javascript">
+var fileEle = document.getElementById('img');
+var fileEle = document.getElementById('img');
+fileEle.onchange = function() {
+  if (!this.files.length) return;
+ 
+  //以下考虑的是单图情况
+  var _ua = window.navigator.userAgent;
+  var _simpleFile = this.files[0];
+ 
+  //判断是否为图片
+  if (!/\/(?:jpeg|png|gif)/i.test(_simpleFile.type)) return;
+ 
+  //插件exif.js获取ios图片的方向信息
+  var _orientation;
+  if(_ua.indexOf('iphone') > 0) {
+    EXIF.getData(_simpleFile,function(){
+      _orientation=EXIF.getTag(this,'Orientation');
+    });
+  }
+ 
+  //1.读取文件，通过FileReader，将图片文件转化为DataURL，即data:img/png;base64，开头的url，可以直接放在image.src中;
+  var _reader = new FileReader(),
+    _img = new Image(),
+    _url;
+ 
+	
+  _reader.onload = function() {
+ 
+    _url = this.result;
+    _img.url = _url;
+	document.getElementById('one').src = _url;
+	console.log(_url);
+	return;
+    _img.onload = function () {
+	 
+      var _data = compress(_img);
+	  
+	  return false;
+      //uploadPhoto(_data, _orientation);
+    };
+  };
+ 
+  _reader.readAsDataURL(_simpleFile);
+};
+
+        </script>

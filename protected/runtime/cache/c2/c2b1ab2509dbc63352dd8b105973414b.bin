@@ -1,0 +1,251 @@
+a:2:{i:0;a:2:{i:0;s:41317:"<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta property="qc:admins" content="043453532776115117211163757" />
+    <title>Html5之File API-七秒记忆网</title>
+    <meta name="keywords" content="Html5之File API-七秒记忆网,个人博客,七秒记忆,技术博客,技术分享-七秒记忆网" />
+    <meta name="description" content="Html5之File API" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!--百度统计-->
+    <script>
+    var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b4b71ff95b7da5cd96d1bbe1c34ec647";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+    <link rel="stylesheet" href="/assets/home/css/base.css"/>
+    <link rel="stylesheet" href="/assets/home/css/laypage.css"/>
+    <link rel="stylesheet" href="/assets/home/css/style.css"/>
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/home/js/jquery.easing.min.js"></script>
+    <script src="/assets/home/js/laypage.js"></script>
+    <script src="/assets/home/js/cookie.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/assets/home/js/xss.min.js"></script>
+    <script src="/assets/home/js/main.js"></script>
+     <!-- 引入文件 -->
+    <!-- 指定回调地址，同时回调地址要与申请的回调地址一致 -->
+    <script type="text/javascript" src="https://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101340021" data-redirecturi="https://www.qimiaojiyi.com/qqcontect/sheng.html" charset="utf-8"></script>
+</head>
+<body>
+   <div class="header">
+       <ul class="navBar">
+           <li class="nav"><a href="/" >首页</a></li>
+           <li class="nav"><a href="/home/front" class="lineOn">前端</a></li>
+           <li class="nav"><a href="/home/back" >后端</a></li>
+           <li class="nav"><a href="/home/system" >运维</a></li>
+           <li class="nav"><a href="/home/zatan" >网络杂谈</a></li>
+           <li class="nav"><a href="/home/leavemsg" >给我留言</a></li>
+       </ul>
+       <!--<p class="search">
+           <input type="text" id="serachText" placeholder="搜索"><a href="#" id="serachSbmit"><img src="/assets/home/img/glyphicons-halflings-white.png" alt="搜索"></a>
+       </p>-->
+       <div class="linestyle">
+             <div class="lineHover" style="display: none;"></div>
+       </div>
+       
+   </div>
+   <script type="text/javascript" charset="utf-8" src="/assets/ueditor/ueditor.parse.min.js"></script>
+<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101340021" data-redirecturi="http://www.qimiaojiyi.com/qqcontect/sheng.html" charset="utf-8"></script>
+<div class="bodys">
+   <div class="article">
+			<ul class="right list">
+                            <li style="padding-top:0px;">
+                                    <img src="/uploads/avatar/fb5e6087eb1b2dc/1679091c5a.jpg" style="float: left;width:35px;vertical-align:middle;margin-right: 10px;border-radius: 50%;">
+                                    <h4 articleid=3 class="onlyId">Html5之File API</h4>
+                                    <div class="tool">
+			               <p>
+			                    <span class="time"><span class="icon"></span>2016-08-29</span>
+			                    <span class="autour"><span class="icon"></span>superSheng11</span>
+			                    <span class="clicks" id="3">
+			                        <span class="icon"></span>
+			                        <span class="number">26</span>
+			                        <span class="title">您已赞过...</span>
+			                    </span>
+			               </p>
+			               <div class="bdsharebuttonbox shares"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_bdysc" data-cmd="bdysc" title="分享到百度云收藏"></a></div>
+			           </div>
+			               <div class="content text">
+			               <p style="text-indent: 32px"><span style=";font-family:宋体;font-size:16px">今天</span><span style=";font-family:宋体;font-size:16px">是小编的第一</span><span style=";font-family:宋体;font-size:16px">篇</span><span style=";font-family:宋体;font-size:16px">博客的发布，有什么不足的地方希望大家</span><span style=";font-family:宋体;font-size:16px">留言指出来，</span><span style=";font-family:宋体;font-size:16px">小编</span><span style=";font-family:宋体;font-size:16px">尽量</span><span style=";font-family:宋体;font-size:16px">改正</span><span style=";font-family:宋体;font-size:16px">。</span></p><p style="text-indent: 32px"><span style=";font-family:宋体;font-size:16px">那么就</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">言归正传，开始学习，今天讲的是</span>HTML5</span><span style=";font-family:宋体;font-size:16px">中</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">的文件</span>API</span><span style=";font-family:宋体;font-size:16px">，</span><span style=";font-family:宋体;font-size:16px">它主要的</span><span style=";font-family:宋体;font-size:16px">应用</span><span style=";font-family:宋体;font-size:16px">与文件的上传</span><span style=";font-family:宋体;font-size:16px">。</span><span style=";font-family:宋体;font-size:16px">下面</span><span style=";font-family:宋体;font-size:16px">是</span><span style=";font-family:宋体;font-size:16px">对它的</span><span style=";font-family:宋体;font-size:16px">介绍</span><span style=";font-family:宋体;font-size:16px">：</span></p><p style="text-indent: 32px"><span style=";font-family:宋体;font-size:16px">兼容</span><span style=";font-family:宋体;font-size:16px">：</span><span style=";font-family:宋体;font-size:16px">最低</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">版本兼容到</span>ie10</span></p><pre class="brush:html;toolbar:false">HTML:&lt;input&nbsp;type=’file’&nbsp;multiple=’multiple’&gt;</pre><p style="text-indent: 32px"><span style=";font-family:宋体;font-size:16px">在</span><span style=";font-family:宋体;font-size:16px">html4</span><span style=";font-family:宋体;font-size:16px">中文件</span><span style=";font-family:宋体;font-size:16px">上传</span><span style=";font-family:宋体;font-size:16px">控件指</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">支持单文件上传，但是在</span>html5</span><span style=";font-family:宋体;font-size:16px">中只要添加</span><span style=";font-family:宋体;font-size:16px">multiple属性就可以实现一次上传多个文件。</span><span style=";font-family:宋体;font-size:16px">这里</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">还有一个</span>accept</span><span style=";font-family:宋体;font-size:16px">属性</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">用于选择上传文件的类型，</span>eg:&nbsp;</span></p><p style="text-indent: 32px"><span style=";font-family:宋体;font-size:16px">&lt;input type=’file’ multiple=’multiple’ accept=’image/*’&gt;</span><span style=";font-family:宋体;font-size:16px">表示只能</span><span style=";font-family:宋体;font-size:16px">上传</span><span style=";font-family:宋体;font-size:16px">图片</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">文件，</span>accept</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">有</span>audio</span><span style=";font-family:宋体;font-size:16px">/*|video/*|image/*|NIME_type</span><span style=";font-family:宋体;font-size:16px">属性</span><span style=";font-family:宋体;font-size:16px">，但是这个属性</span><span style=";font-family:宋体;font-size:16px">在</span><span style=";font-family:宋体;font-size:16px">pc端的支持并不是太好</span><span style=";font-family:宋体;font-size:16px">。即便</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">设置了</span>accept属性</span><span style=";font-family:宋体;font-size:16px">文件</span><span style=";font-family:宋体;font-size:16px">类型，</span><span style=";font-family:宋体;font-size:16px">不属于</span><span style=";font-family:宋体;font-size:16px">该类型的文件依旧可以上传</span><span style=";font-family:宋体;font-size:16px">（注意！）。如果</span><span style=";font-family:宋体;font-size:16px">需要判断</span><span style=";font-family:宋体;font-size:16px">上传</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">文件类型则需要通过</span>js来进行判断，文章后面会有介绍。</span></p><p style="text-indent: 32px"><span style=";font-family:宋体;font-size:16px">虽然在</span><span style=";font-family:宋体;font-size:16px">pc端支持不是太好，</span><span style=";font-family:宋体;font-size:16px">但是</span><span style=";font-family:宋体;font-size:16px">在移动端中要</span><span style=";font-family:宋体;font-size:16px">实现</span><span style=";font-family:宋体;font-size:16px">上传图</span><span style=";font-family:宋体;font-size:16px">片（打开</span><span style=";font-family:宋体;font-size:16px">相册</span><span style=";font-family:宋体;font-size:16px">）则可以</span><span style=";font-family:宋体;font-size:16px">&lt;input type=’file’ multiple=’multiple’ accept=’image/*’&gt;</span><span style=";font-family:宋体;font-size:16px">音视频类</span><span style=";font-family:宋体;font-size:16px">同。</span></p><p style="text-indent: 32px"><span style=";font-family:宋体;font-size:16px">接下来</span><span style=";font-family:宋体;font-size:16px">开始介绍</span><span style=";font-family:宋体;font-size:16px">相关</span><span style=";font-family:宋体;font-size:16px">的属性、方法：</span></p><p style="text-indent: 32px"><span style="font-size: 16px;"><strong><span style="font-family: 宋体;">(1)FileList对象</span></strong></span></p><p style="margin-left: 32px"><span style=";font-family:宋体;font-size:16px">F</span><span style=";font-family:宋体;font-size:16px">ileList</span><span style=";font-family:宋体;font-size:16px">对象</span><span style=";font-family:宋体;font-size:16px">的获取有两种方式一种是通过文件控件，一</span><span style=";font-family:宋体;font-size:16px">种</span><span style=";font-family:宋体;font-size:16px">是通过拖拽来获取。本文</span><span style=";font-family:宋体;font-size:16px">主要以</span><span style=";font-family:宋体;font-size:16px">文件控件为例（</span><span style=";font-family:宋体;font-size:16px">大家</span><span style=";font-family:宋体;font-size:16px">如果</span><span style=";font-family:宋体;font-size:16px">想</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">知道如何通过</span>drop</span><span style=";font-family:宋体;font-size:16px">事件</span><span style=";font-family:宋体;font-size:16px">来获取</span><span style=";font-family:宋体;font-size:16px">的</span><span style=";font-family:宋体;font-size:16px">寻找度娘</span><span style=";font-family:宋体;font-size:16px">，</span><span style=";font-family:宋体;font-size:16px">小编</span><span style=";font-family:宋体;font-size:16px">偷个</span><span style=";font-family:宋体;font-size:16px">懒就不阐述了）</span></p><p style="margin-left: 32px"><span style=";font-family:宋体;font-size:16px">F</span><span style=";font-family:宋体;font-size:16px">ileList</span><span style=";font-family:宋体;font-size:16px">对象表示获取</span><span style=";font-family:宋体;font-size:16px">的</span><span style=";font-family:宋体;font-size:16px">文件</span><span style=";font-family:宋体;font-size:16px">列表</span><span style=";font-family:宋体;font-size:16px">，</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">控件中的每个文件就是一个</span>file对象，而</span><span style=";font-family:宋体;font-size:16px">F</span><span style=";font-family:宋体;font-size:16px">ileList</span><span style=";font-family:宋体;font-size:16px">就是</span><span style=";font-family:宋体;font-size:16px">这些对象的列表。</span></p><p style="margin-left: 32px"><span style="font-size: 16px;"><strong><span style="font-family: 宋体;">(2)File对象</span></strong></span><span style="font-family: 宋体; font-size: 16px;">（File是不会单独出现而是以数组的形式出现，存在于FileList中）</span><span style="font-family: 宋体;">。</span></p><p style="margin-left: 32px"><span style="text-indent: 48px; font-family: 宋体;">File对象有以下</span><span style="text-indent: 48px; font-family: 宋体;">几个主要的属性：</span></p><p style="margin-left: 32px"><span style=";font-family:宋体;font-size:16px">name:文件名</span><span style=";font-family:宋体;font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p style="margin-left: 32px"><span style=";font-family:宋体;font-size:16px">lastModifiedDate:</span><span style=";font-family:宋体;font-size:16px">文件</span><span style=";font-family:宋体;font-size:16px">最后被修改的日期</span></p><p style="margin-left: 32px"><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">由于</span>File对象</span><span style=";font-family:宋体;font-size:16px">继承了</span><span style=";font-family:宋体;font-size:16px">B</span><span style=";font-family:宋体;font-size:16px">lob</span><span style=";font-family:宋体;font-size:16px">对象（</span><span style=";font-family:宋体;font-size:16px">这个很有用哦，可以</span><span style=";font-family:宋体;font-size:16px">很有用</span><span style=";font-family:宋体;font-size:16px">的功能</span><span style=";font-family:宋体;font-size:16px">哦</span><span style=";font-family:宋体;font-size:16px">，后面的</span><span style=";font-family:宋体;font-size:16px">文章</span><span style=";font-family:宋体;font-size:16px">会给大家</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">介绍）</span>,因此File对象</span><span style=";font-family:宋体;font-size:16px">还有</span></p><p style="margin-left: 32px"><span style=";font-family:宋体;font-size:16px">size:</span><span style=";font-family:宋体;font-size:16px">文件</span><span style=";font-family:宋体;font-size:16px">大小（</span><span style=";font-family:宋体;font-size:16px">这里</span><span style=";font-family:宋体;font-size:16px">以字节</span><span style=";font-family:宋体;font-size:16px">b为</span><span style=";font-family:宋体;font-size:16px">单位）</span></p><p style="margin-left: 32px"><span style=";font-family:宋体;font-size:16px">type:</span><span style=";font-family:宋体;font-size:16px">文件</span><span style=";font-family:宋体;font-size:16px">类型（</span><span style=";font-family:宋体;font-size:16px">专</span><span style=";font-family:宋体;font-size:16px">用来判断文件的类型）</span><span style=";font-family:宋体;font-size:16px">,如果</span><span style=";font-family:宋体;font-size:16px">未知则会返回空字符串</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">。</span></span></p><p style="margin-left: 32px"><span style="text-indent: 40px; font-family: 宋体;">方法</span><span style="text-indent: 40px; font-family: 宋体;">：</span></p><p style="margin-left: 32px"><span style="text-indent: 40px; font-family: 宋体;">s</span><span style="text-indent: 40px; font-family: 宋体;">lice（），上面</span><span style="text-indent: 40px; font-family: 宋体;">也介绍了file</span><span style="text-indent: 40px; font-family: 宋体;">对象继承了B</span><span style="text-indent: 40px; font-family: 宋体;">lob，所</span><span style="text-indent: 40px; font-family: 宋体;">以File同样</span><span style="text-indent: 40px; font-family: 宋体;">具有这个方法</span><span style="text-indent: 40px; font-family: 宋体;">。</span><span style="text-indent: 40px; font-family: 宋体;">&nbsp;</span></p><p style="margin-left: 32px"><span style=";font-family:宋体;font-size:16px">具体代码</span><span style=";font-family:宋体;font-size:16px">如下：</span></p><pre class="brush:js;toolbar:false">var&nbsp;fileLabel=document.getElementById(“FileDemo”);
+fileLable.onchange=function(){//这里采用change事件，具体原因大家可以试下其他事件就可以，这里不过多的解释
+var&nbsp;fileList=this.files；//获取获取FileList对象(返回的数组)
+var&nbsp;file=&nbsp;fileList[0];//获取file对象
+var&nbsp;name=file.name//文件名
+var&nbsp;lastTime=file.lastModifiedDate//文件最后被修改的时间
+var&nbsp;type=file.type;
+var&nbsp;size=file.size;
+}</pre><p style="text-indent: 24px"><strong><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">（</span>3）B</span><span style=";font-family:宋体;font-size:16px">lob</span><span style=";font-family:宋体;font-size:16px">对象</span></strong></p><p style="text-indent: 32px"><span style=";font-family:宋体;font-size:16px">这里</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">简单介绍下</span>Blob对象，它其实就是一个二进制的数据，拥有size</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">、</span>type的</span><span style=";font-family:宋体;font-size:16px">属性</span><span style=";font-family:宋体;font-size:16px">。它</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">还提供了</span>slice</span><span style=";font-family:宋体;font-size:16px">方法</span><span style=";font-family:宋体;font-size:16px">，</span><span style=";font-family:宋体;font-size:16px">可以</span><span style=";font-family:宋体;font-size:16px">通过</span><span style=";font-family:宋体;font-size:16px">它</span><span style=";font-family:宋体;font-size:16px">访问数据内部的某</span><span style=";font-family:宋体;font-size:16px">个</span><span style=";font-family:宋体;font-size:16px">数据块</span><span style=";font-family:宋体;font-size:16px">。</span><span style=";font-family:宋体;font-size:16px">S</span><span style=";font-family:宋体;font-size:16px">lice</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">有两个参数</span>slice(start,end),start</span><span style=";font-family:宋体;font-size:16px">表示</span><span style=";font-family:宋体;font-size:16px">其实读取的字节，</span><span style=";font-family:宋体;font-size:16px">end</span><span style=";font-family:宋体;font-size:16px">表示结束读取的字节</span><span style=";font-family:宋体;font-size:16px">（</span><span style=";font-family:宋体;font-size:16px">文件</span><span style=";font-family:宋体;font-size:16px">的</span><span style=";font-family:宋体;font-size:16px">分布</span><span style=";font-family:宋体;font-size:16px">上传</span><span style=";font-family:宋体;font-size:16px">中会介绍如何使用</span><span style=";font-family:宋体;font-size:16px">）</span><span style=";font-family:宋体;font-size:16px">。</span></p><p style="text-indent: 32px"><span style=";font-family:宋体;font-size:16px">那么</span><span style=";font-family:宋体;font-size:16px">如何</span><span style=";font-family:宋体;font-size:16px">来</span><span style=";font-family:宋体;font-size:16px">穿件</span><span style=";font-family:宋体;font-size:16px">B</span><span style=";font-family:宋体;font-size:16px">lob对象呢？其实</span><span style=";font-family:宋体;font-size:16px">很简单</span><span style=";font-family:宋体;font-size:16px">，创建有两种方法一</span><span style=";font-family:宋体;font-size:16px">种</span><span style=";font-family:宋体;font-size:16px">就是</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">通过</span>B</span><span style=";font-family:宋体;font-size:16px">lob构造函数，另一种就是对</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">现有</span>B</span><span style=";font-family:宋体;font-size:16px">lob对象slice()</span><span style=";font-family:宋体;font-size:16px">切出</span><span style=";font-family:宋体;font-size:16px">的</span><span style=";font-family:宋体;font-size:16px">一部分。</span></p><pre class="brush:js;toolbar:false">Eg:var&nbsp;blob=new&nbsp;Blob（[“superSheng11”]）；
+1、var&nbsp;a=document,creatElement(“a”);
+a.href=URL.createObjectURL(blob);
+a.donwLoad=”superSheng11”;
+a.txetContent=’I&nbsp;am&nbsp;superSheng11’;
+document.body.appendChild(a);
+2、var&nbsp;newBlob=oldBlob.slice(start,end);</pre><p style="text-indent: 24px"><strong><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">（</span>4）读取文件</span></strong></p><p style="text-indent: 24px"><span style=";font-family:宋体;font-size:16px">&nbsp;FileReader对象（用来</span><span style=";font-family:宋体;font-size:16px">读取文件数据</span><span style=";font-family:宋体;font-size:16px">）</span></p><p style="text-indent: 24px"><span style=";font-family:宋体;font-size:16px">&nbsp;<span style="font-family:宋体">一份共有</span>5个</span><span style=";font-family:宋体;font-size:16px">方法</span><span style=";font-family:宋体;font-size:16px">，</span><span style=";font-family:宋体;font-size:16px">读取</span><span style=";font-family:宋体;font-size:16px">文件</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">采用异步方式，文件读取成功后会放在</span>result</span><span style=";font-family:宋体;font-size:16px">属性</span><span style=";font-family:宋体;font-size:16px">。，</span><span style=";font-family:宋体;font-size:16px">这些</span><span style=";font-family:宋体;font-size:16px">方法</span><span style=";font-family:宋体;font-size:16px">分别</span><span style=";font-family:宋体;font-size:16px">是</span><span style=";font-family:宋体;font-size:16px">：</span></p><p style="margin-left: 56px"><span style="font-family:宋体;font-size:16px">1、</span><span style=";font-family:宋体;font-size:16px">raedAsBinaryString(file|Blob)</span></p><p style="margin-left: 32px"><span style=";font-family:宋体;font-size:16px">&nbsp;</span><span style=";font-family:宋体;font-size:16px">&nbsp;&nbsp;</span><span style=";font-family:宋体;font-size:16px">raedAsBinaryString(file|Blob)读取数据结果作为二级制字符串形式放到FileReader的result属性中,通常将它传给后端，后端通过这段字符串来存储文件。</span></p><p style="margin-left: 56px"><span style="font-family:宋体;font-size:16px">2、</span><span style=";font-family:宋体;font-size:16px">readAsText(file|Blob[,encoding])</span></p><p style="margin-left: 32px;text-indent: 24px"><span style=";font-family:宋体;font-size:16px">readAsText(file|Blob[,encoding])将文件已文本的方式读取，其中第二个参数（可不写）为一个字符串,表示了返回数据所使用的编码.如果不指定,默认为UTF-8。</span></p><p style="margin-left: 56px"><span style="font-family:宋体;font-size:16px">3、</span><span style=";font-family:宋体;font-size:16px">readAsDataURL(file|Blob)</span></p><p style="margin-left: 32px;text-indent: 24px"><span style=";font-family:宋体;font-size:16px">readAsDataURL(file|Blob)将文件读取为一段data url字符串，事实上是将小文件已一种特殊的格式的url(base64位地址)地址直接读取到页面（通常指图片、html等格式文件）</span></p><p style="margin-left: 56px"><span style="font-family:宋体;font-size:16px">4、</span><span style=";font-family:宋体;font-size:16px">abort(无参数)</span></p><p style="text-indent: 32px"><span style=";font-family:宋体;font-size:16px">&nbsp; &nbsp; abort(无参数)中断读取操作,</span><span style="font-family: 宋体;">需要注意的是，无论读取成功还是失败，方法都不会返回读取结果，结果返回在</span><span style="font-family: 宋体;">result属性中</span></p><p style="margin-left: 56px"><span style="font-family:宋体;font-size:16px">5、</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">方法五：</span>readAsArrayBuffer(file|Blob)读取结果是一个 ArrayBuffer 对象，</span><span style=";font-family:宋体;font-size:16px">这个不常用</span><span style=";font-family:宋体;font-size:16px">。</span></p><p style="margin-left: 32px"><strong><span style=";font-family:宋体;font-size:16px">FileReader事件</span></strong></p><p style="margin-left: 32px"><span style="font-family: 宋体;">&nbsp;1&nbsp;</span><span style="font-family: 宋体;">onloadstart &nbsp; &nbsp; &nbsp;数据读取开始时发生</span></p><p style="margin-left: 32px"><span style="font-family: 宋体;">&nbsp;2&nbsp;</span><span style="font-family: 宋体;">onprogress &nbsp; &nbsp; &nbsp; 数据读取中</span></p><p style="margin-left: 32px"><span style="text-indent: 32px; font-family: 宋体;">&nbsp;3&nbsp;</span><span style="text-indent: 32px; font-family: 宋体;">onload &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;数据读取完成</span></p><p style="margin-left: 32px"><span style="font-family: 宋体;">&nbsp;4&nbsp;</span><span style="font-family: 宋体;">onabort &nbsp; &nbsp; &nbsp; &nbsp; 数据读取中断</span></p><p style="margin-left: 32px"><span style="text-indent: 32px; font-family: 宋体;">&nbsp;5&nbsp;</span><span style="text-indent: 32px; font-family: 宋体;">onerror &nbsp; &nbsp; &nbsp; &nbsp; 数据读取错误</span></p><p style="margin-left: 32px"><span style="font-family: 宋体;">&nbsp;6&nbsp;</span><span style="font-family: 宋体;">onloadend &nbsp; &nbsp; &nbsp; &nbsp;数据读取完成时无论成功还是失败</span></p><p style="margin-left: 32px"><span style=";font-family:宋体;font-size:16px">具体</span><span style=";font-family:宋体;font-size:16px">代码如下：</span></p><pre class="brush:js;toolbar:false">var&nbsp;fileLabel=document.getElementById(“FileDemo”);
+fileLable.onchange=function(){
+&nbsp;&nbsp;&nbsp;var&nbsp;fileList=this.files；
+&nbsp;&nbsp;&nbsp;var&nbsp;file=&nbsp;fileList[0];
+&nbsp;&nbsp;&nbsp;var&nbsp;flag=checkImage(file);
+&nbsp;&nbsp;&nbsp;if(falg){
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;readAsDataURL(file);
+&nbsp;&nbsp;&nbsp;}
+}
+//检测文件类型
+function&nbsp;checkImage(file){
+&nbsp;&nbsp;&nbsp;&nbsp;if(!/image\/\w+/.test(file.type)){
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(file.name&nbsp;+&nbsp;&quot;不是图片&quot;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;false;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;true;
+}
+//读取文件
+function&nbsp;readAsDataURL(file){
+&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;reader=new&nbsp;FileReader();
+&nbsp;&nbsp;&nbsp;&nbsp;reader.readAsDataURL(file);
+&nbsp;&nbsp;&nbsp;&nbsp;reader.onload=function(e){
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;img=new&nbsp;Image();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;img.width=100;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;img.height=100;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;img.onload=function(){
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.body.appenChild(img);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Img.src=e.target.result//&nbsp;e.target.result等同于reader.result&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</pre><p><span style=";font-family:宋体;font-size:16px">今天小编</span><span style=";font-family:宋体;font-size:16px">就写到这里了，接下</span><span style=";font-family:宋体;font-size:16px">来文章会为</span><span style=";font-family:宋体;font-size:16px">大家写一个文件</span><span style=";font-family:宋体;font-size:16px">上传</span><span style=";font-family:宋体;font-size:16px">分布加载的</span><span style=";font-family:宋体;font-size:16px">demo。</span></p><p><br/></p>			           </div>
+			       </li>
+			</ul>
+			<ul class="connect">
+                            <h5><i class="relative-article"></i>相关文章</h5>
+			        			</ul>
+			<ul class="connect Label">
+		          <h5><span></span>文章分类</h5>
+                          		          <li><a href="/home/childtype/typeid/21" class="LabelLink">Yaf</a></li>
+                          		          <li><a href="/home/childtype/typeid/20" class="LabelLink">ThinkPHP</a></li>
+                          		          <li><a href="/home/childtype/typeid/19" class="LabelLink">Yii</a></li>
+                          		          <li><a href="/home/childtype/typeid/18" class="LabelLink">开发框架</a></li>
+                          		          <li><a href="/home/childtype/typeid/16" class="LabelLink">科技</a></li>
+                          		          <li><a href="/home/childtype/typeid/15" class="LabelLink">Mysql</a></li>
+                          		          <li><a href="/home/childtype/typeid/14" class="LabelLink">Linux</a></li>
+                          		          <li><a href="/home/childtype/typeid/13" class="LabelLink">Windows</a></li>
+                          		          <li><a href="/home/childtype/typeid/12" class="LabelLink">JavaScript</a></li>
+                          		          <li><a href="/home/childtype/typeid/11" class="LabelLink">Css</a></li>
+                          		          <li><a href="/home/childtype/typeid/10" class="LabelLink">HTML</a></li>
+                          		    </ul>
+	</div>	    
+    <!--相关评论 -->
+    <h4 class="comment">相关评论:</h4>
+    <ul class="commentList">
+       
+    </ul>
+
+    <!-- 分页 -->
+    <div class="_LookMore" style="display: none;">查看更多</div>
+	<div id="biuuu_city"></div>
+	<!-- 留言 -->
+	<ul class="commentSbmit">
+        <li class="_personShow" style="text-align:left">
+            <img src="/assets/home/img/default.jpg" alt="">
+            <span style="display: none">退出登录</span>
+        </li>
+        <li class="myself">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <p><img src="/assets/home/img/1.jpg" alt=""></p>
+            <div class="shengMessage">发布</div>
+            <div class="Expression shengHidden bottomReply">
+            	<ul>    
+                                            <li class="ExpressionImg" imgNum="[惊呆]"><img src="/assets/home/emoubb/1.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[可爱]"><img src="/assets/home/emoubb/2.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[憨笑]"><img src="/assets/home/emoubb/3.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[坏笑]"><img src="/assets/home/emoubb/4.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[无聊]"><img src="/assets/home/emoubb/5.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[生气]"><img src="/assets/home/emoubb/6.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[折磨]"><img src="/assets/home/emoubb/7.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不屑]"><img src="/assets/home/emoubb/8.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[流泪]"><img src="/assets/home/emoubb/9.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不理]"><img src="/assets/home/emoubb/10.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[晕]"><img src="/assets/home/emoubb/11.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[冷汗]"><img src="/assets/home/emoubb/12.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[困]"><img src="/assets/home/emoubb/13.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[害羞]"><img src="/assets/home/emoubb/14.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[呐喊]"><img src="/assets/home/emoubb/15.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[稀罕]"><img src="/assets/home/emoubb/16.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[色]"><img src="/assets/home/emoubb/17.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[酷]"><img src="/assets/home/emoubb/18.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[石化]"><img src="/assets/home/emoubb/19.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[囧]"><img src="/assets/home/emoubb/20.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[睡觉]"><img src="/assets/home/emoubb/21.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[调皮]"><img src="/assets/home/emoubb/22.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[亲亲]"><img src="/assets/home/emoubb/23.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[疑问]"><img src="/assets/home/emoubb/24.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[闭嘴]"><img src="/assets/home/emoubb/25.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[难过]"><img src="/assets/home/emoubb/26.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[好奇]"><img src="/assets/home/emoubb/27.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[得意]"><img src="/assets/home/emoubb/28.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[鄙视]"><img src="/assets/home/emoubb/29.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[猪头]"><img src="/assets/home/emoubb/30.gif" alt=""></li>
+                                	</ul>
+            </div>
+        </li>
+	</ul>
+	<!-- qq登录 -->
+<span id="qqLoginBtn" style="display: none;"></span>
+</div>
+<div id="sheng1" style="width:200px;height:50px;position:fixed;left:0;bottom:200px;"></div>
+<!-- 待克隆表情包 -->
+<div class="shengClone" style="display: none;">
+	<div class="Expression cloneOne">
+            	<ul>
+                                            <li class="ExpressionImg" imgNum="[惊呆]"><img src="/assets/home/emoubb/1.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[可爱]"><img src="/assets/home/emoubb/2.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[憨笑]"><img src="/assets/home/emoubb/3.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[坏笑]"><img src="/assets/home/emoubb/4.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[无聊]"><img src="/assets/home/emoubb/5.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[生气]"><img src="/assets/home/emoubb/6.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[折磨]"><img src="/assets/home/emoubb/7.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不屑]"><img src="/assets/home/emoubb/8.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[流泪]"><img src="/assets/home/emoubb/9.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不理]"><img src="/assets/home/emoubb/10.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[晕]"><img src="/assets/home/emoubb/11.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[冷汗]"><img src="/assets/home/emoubb/12.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[困]"><img src="/assets/home/emoubb/13.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[害羞]"><img src="/assets/home/emoubb/14.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[呐喊]"><img src="/assets/home/emoubb/15.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[稀罕]"><img src="/assets/home/emoubb/16.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[色]"><img src="/assets/home/emoubb/17.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[酷]"><img src="/assets/home/emoubb/18.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[石化]"><img src="/assets/home/emoubb/19.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[囧]"><img src="/assets/home/emoubb/20.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[睡觉]"><img src="/assets/home/emoubb/21.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[调皮]"><img src="/assets/home/emoubb/22.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[亲亲]"><img src="/assets/home/emoubb/23.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[疑问]"><img src="/assets/home/emoubb/24.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[闭嘴]"><img src="/assets/home/emoubb/25.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[难过]"><img src="/assets/home/emoubb/26.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[好奇]"><img src="/assets/home/emoubb/27.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[得意]"><img src="/assets/home/emoubb/28.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[鄙视]"><img src="/assets/home/emoubb/29.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[猪头]"><img src="/assets/home/emoubb/30.gif" alt=""></li>
+                                	</ul>
+    </div>
+</div>
+</body>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<script>
+    $(function(){
+       uParse('.content', {
+            rootPath: '/assets/ueditor/'
+        });
+    });
+</script>
+</html>   <!-- <img src="/assets/home/img/glyphicons-halflings-white.png" alt="搜索"> -->
+    <div class="clearfix"></div>
+    <div class="footer" style="margin:0 auto;margin-top: 20px;width: 1100px;height: 30px;line-height: 30px;color:#666;">
+        Powered by:七秒记忆网&nbsp;&nbsp;网站备案号：<a href="http://www.miitbeian.gov.cn" target="_blank">皖ICP备13016713号-2</a>&nbsp;&nbsp;<font size="4">&COPY;</font>2016-2018
+    </div>
+";i:1;N;}i:1;N;}

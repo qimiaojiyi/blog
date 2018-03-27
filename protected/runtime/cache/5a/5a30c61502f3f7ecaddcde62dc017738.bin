@@ -1,0 +1,294 @@
+a:2:{i:0;a:2:{i:0;s:21963:"<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta property="qc:admins" content="043453532776115117211163757" />
+    <title>Yii criteria 常见的用法-七秒记忆网</title>
+    <meta name="keywords" content="Yii criteria 常见的用法-七秒记忆网,个人博客,七秒记忆,技术博客,技术分享-七秒记忆网" />
+    <meta name="description" content="Yii criteria 常见的用法" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!--百度统计-->
+    <script>
+    var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b4b71ff95b7da5cd96d1bbe1c34ec647";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+    <link rel="stylesheet" href="/assets/home/css/base.css"/>
+    <link rel="stylesheet" href="/assets/home/css/laypage.css"/>
+    <link rel="stylesheet" href="/assets/home/css/style.css"/>
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/home/js/jquery.easing.min.js"></script>
+    <script src="/assets/home/js/laypage.js"></script>
+    <script src="/assets/home/js/cookie.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/assets/home/js/xss.min.js"></script>
+    <script src="/assets/home/js/main.js"></script>
+     <!-- 引入文件 -->
+    <!-- 指定回调地址，同时回调地址要与申请的回调地址一致 -->
+    <script type="text/javascript" src="https://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101340021" data-redirecturi="https://www.qimiaojiyi.com/qqcontect/sheng.html" charset="utf-8"></script>
+</head>
+<body>
+   <div class="header">
+       <ul class="navBar">
+           <li class="nav"><a href="/" >首页</a></li>
+           <li class="nav"><a href="/home/front" >前端</a></li>
+           <li class="nav"><a href="/home/back" class="lineOn">后端</a></li>
+           <li class="nav"><a href="/home/system" >运维</a></li>
+           <li class="nav"><a href="/home/zatan" >网络杂谈</a></li>
+           <li class="nav"><a href="/home/leavemsg" >给我留言</a></li>
+       </ul>
+       <!--<p class="search">
+           <input type="text" id="serachText" placeholder="搜索"><a href="#" id="serachSbmit"><img src="/assets/home/img/glyphicons-halflings-white.png" alt="搜索"></a>
+       </p>-->
+       <div class="linestyle">
+             <div class="lineHover" style="display: none;"></div>
+       </div>
+       
+   </div>
+   <script type="text/javascript" charset="utf-8" src="/assets/ueditor/ueditor.parse.min.js"></script>
+<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101340021" data-redirecturi="http://www.qimiaojiyi.com/qqcontect/sheng.html" charset="utf-8"></script>
+<div class="bodys">
+   <div class="article">
+			<ul class="right list">
+                            <li style="padding-top:0px;">
+                                    <img src="/uploads/avatar/a36dedd4bea2543/8f14e45fce.png" style="float: left;width:35px;vertical-align:middle;margin-right: 10px;border-radius: 50%;">
+                                    <h4 articleid=24 class="onlyId">Yii criteria 常见的用法</h4>
+                                    <div class="tool">
+			               <p>
+			                    <span class="time"><span class="icon"></span>2017-03-15</span>
+			                    <span class="autour"><span class="icon"></span>hito</span>
+			                    <span class="clicks" id="24">
+			                        <span class="icon"></span>
+			                        <span class="number">4</span>
+			                        <span class="title">您已赞过...</span>
+			                    </span>
+			               </p>
+			               <div class="bdsharebuttonbox shares"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_bdysc" data-cmd="bdysc" title="分享到百度云收藏"></a></div>
+			           </div>
+			               <div class="content text">
+			               <pre class="brush:php;toolbar:false">$cr&nbsp;=&nbsp;new&nbsp;CDbCriteria;&nbsp;&nbsp;&nbsp;
+//select&nbsp;查询操作&nbsp;
+$cr-&gt;select&nbsp;=&nbsp;&#39;*&#39;;//默认*&nbsp;&nbsp;
+$cr-&gt;select&nbsp;=&nbsp;&#39;id,name&#39;;//指定的字段&nbsp;&nbsp;
+$cr-&gt;select&nbsp;=&nbsp;&#39;t.*,t.id,t.name&#39;;//连接查询时，第一个表as&nbsp;t,所以用t.*&nbsp;&nbsp;
+$cr-&gt;distinct&nbsp;=&nbsp;FALSE;&nbsp;//是否唯一查询&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+//join&nbsp;&nbsp;连表操作
+$cr-&gt;join&nbsp;=&nbsp;&#39;left&nbsp;join&nbsp;table2&nbsp;t2&nbsp;on(t.id=t2.tid)&#39;;&nbsp;
+$cr-&gt;with&nbsp;=&nbsp;&#39;xxx&#39;;&nbsp;//调用relations&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+//where&nbsp;查询数字字段&nbsp;&nbsp;
+$cr-&gt;addCondition(&quot;id=1&quot;);&nbsp;//查询条件，即where&nbsp;id&nbsp;=&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;
+$cr-&gt;addBetweenCondition(&#39;id&#39;,&nbsp;1,&nbsp;4);//between&nbsp;1&nbsp;and&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+$cr-&gt;addInCondition(&#39;id&#39;,&nbsp;array(1,2,3,4,5));&nbsp;//代表where&nbsp;id&nbsp;IN&nbsp;(1,23,,4,5,);&nbsp;&nbsp;&nbsp;&nbsp;
+$cr-&gt;addNotInCondition(&#39;id&#39;,&nbsp;array(1,2,3,4,5));//与上面正好相法，是NOT&nbsp;IN&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+//where&nbsp;查询字符串字段&nbsp;&nbsp;
+$cr-&gt;addSearchCondition(&#39;name&#39;,&nbsp;&#39;分类&#39;);//搜索条件，其实代表了。。where&nbsp;name&nbsp;like&nbsp;&#39;%分类%&#39;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+//where&nbsp;查询日期字段&nbsp;&nbsp;
+$cr-&gt;addCondition(&quot;create_time&gt;&#39;2012-11-29&nbsp;00:00:00&#39;&quot;);&nbsp;&nbsp;
+$cr-&gt;addCondition(&quot;create_time&lt;&#39;2012-11-30&nbsp;00:00:00&#39;&quot;);&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+//where&nbsp;and&nbsp;or&nbsp;&nbsp;
+$cr-&gt;addCondition(&#39;id=1&#39;,&#39;OR&#39;);//这是OR条件，多个条件的时候，该条件是OR而非AND&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+//这个方法比较特殊，他会根据你的参数自动处理成addCondition或者addInCondition，&nbsp;&nbsp;
+//即如果第二个参数是数组就会调用addInCondition&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+$cr-&gt;compare(&#39;id&#39;,&nbsp;1);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+/**&nbsp;&nbsp;*&nbsp;传递参数&nbsp;*/&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+$cr-&gt;addCondition(&quot;id&nbsp;=&nbsp;:id&quot;);&nbsp;&nbsp;&nbsp;&nbsp;
+$cr-&gt;params[&#39;:id&#39;]=1;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+//order&nbsp;&nbsp;&nbsp;
+$cr-&gt;order&nbsp;=&nbsp;&#39;xxx&nbsp;DESC,XXX&nbsp;ASC&#39;&nbsp;;//排序条件&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+//group&nbsp;&nbsp;
+$cr-&gt;group&nbsp;=&nbsp;&#39;group&nbsp;条件&#39;;&nbsp;&nbsp;&nbsp;&nbsp;
+$cr-&gt;having&nbsp;=&nbsp;&#39;having&nbsp;条件&nbsp;&#39;;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+//limit&nbsp;&nbsp;
+$cr-&gt;limit&nbsp;=&nbsp;10;&nbsp;&nbsp;&nbsp;&nbsp;//取1条数据，如果小于0，则不作处理&nbsp;&nbsp;&nbsp;&nbsp;
+$cr-&gt;offset&nbsp;=&nbsp;1;&nbsp;&nbsp;&nbsp;//两条合并起来，则表示&nbsp;limit&nbsp;10&nbsp;offset&nbsp;1,或者代表了。limit&nbsp;1,10</pre><p><br/></p>			           </div>
+			       </li>
+			</ul>
+			<ul class="connect">
+                            <h5><i class="relative-article"></i>相关文章</h5>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/39.html" class="connectLink">PHPExcel导出</a><span>2017-12-22</span>
+                                </li>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/37.html" class="connectLink">PHP 识别图片相似</a><span>2017-09-19</span>
+                                </li>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/36.html" class="connectLink">pack与unpac</a><span>2017-09-15</span>
+                                </li>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/35.html" class="connectLink">PHP Curl模拟</a><span>2017-09-13</span>
+                                </li>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/34.html" class="connectLink">PHP header</a><span>2017-09-06</span>
+                                </li>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/33.html" class="connectLink"> PHP中的 抽象类</a><span>2017-06-23</span>
+                                </li>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/31.html" class="connectLink">PHP位运算(RBA</a><span>2017-06-07</span>
+                                </li>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/30.html" class="connectLink">MySQL行级锁、表</a><span>2017-06-07</span>
+                                </li>
+			        			</ul>
+			<ul class="connect Label">
+		          <h5><span></span>文章分类</h5>
+                          		          <li><a href="/home/childtype/typeid/21" class="LabelLink">Yaf</a></li>
+                          		          <li><a href="/home/childtype/typeid/20" class="LabelLink">ThinkPHP</a></li>
+                          		          <li><a href="/home/childtype/typeid/19" class="LabelLink">Yii</a></li>
+                          		          <li><a href="/home/childtype/typeid/18" class="LabelLink">开发框架</a></li>
+                          		          <li><a href="/home/childtype/typeid/16" class="LabelLink">科技</a></li>
+                          		          <li><a href="/home/childtype/typeid/15" class="LabelLink">Mysql</a></li>
+                          		          <li><a href="/home/childtype/typeid/14" class="LabelLink">Linux</a></li>
+                          		          <li><a href="/home/childtype/typeid/13" class="LabelLink">Windows</a></li>
+                          		          <li><a href="/home/childtype/typeid/12" class="LabelLink">JavaScript</a></li>
+                          		          <li><a href="/home/childtype/typeid/11" class="LabelLink">Css</a></li>
+                          		          <li><a href="/home/childtype/typeid/10" class="LabelLink">HTML</a></li>
+                          		    </ul>
+	</div>	    
+    <!--相关评论 -->
+    <h4 class="comment">相关评论:</h4>
+    <ul class="commentList">
+       
+    </ul>
+
+    <!-- 分页 -->
+    <div class="_LookMore" style="display: none;">查看更多</div>
+	<div id="biuuu_city"></div>
+	<!-- 留言 -->
+	<ul class="commentSbmit">
+        <li class="_personShow" style="text-align:left">
+            <img src="/assets/home/img/default.jpg" alt="">
+            <span style="display: none">退出登录</span>
+        </li>
+        <li class="myself">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <p><img src="/assets/home/img/1.jpg" alt=""></p>
+            <div class="shengMessage">发布</div>
+            <div class="Expression shengHidden bottomReply">
+            	<ul>    
+                                            <li class="ExpressionImg" imgNum="[惊呆]"><img src="/assets/home/emoubb/1.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[可爱]"><img src="/assets/home/emoubb/2.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[憨笑]"><img src="/assets/home/emoubb/3.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[坏笑]"><img src="/assets/home/emoubb/4.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[无聊]"><img src="/assets/home/emoubb/5.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[生气]"><img src="/assets/home/emoubb/6.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[折磨]"><img src="/assets/home/emoubb/7.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不屑]"><img src="/assets/home/emoubb/8.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[流泪]"><img src="/assets/home/emoubb/9.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不理]"><img src="/assets/home/emoubb/10.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[晕]"><img src="/assets/home/emoubb/11.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[冷汗]"><img src="/assets/home/emoubb/12.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[困]"><img src="/assets/home/emoubb/13.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[害羞]"><img src="/assets/home/emoubb/14.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[呐喊]"><img src="/assets/home/emoubb/15.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[稀罕]"><img src="/assets/home/emoubb/16.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[色]"><img src="/assets/home/emoubb/17.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[酷]"><img src="/assets/home/emoubb/18.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[石化]"><img src="/assets/home/emoubb/19.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[囧]"><img src="/assets/home/emoubb/20.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[睡觉]"><img src="/assets/home/emoubb/21.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[调皮]"><img src="/assets/home/emoubb/22.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[亲亲]"><img src="/assets/home/emoubb/23.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[疑问]"><img src="/assets/home/emoubb/24.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[闭嘴]"><img src="/assets/home/emoubb/25.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[难过]"><img src="/assets/home/emoubb/26.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[好奇]"><img src="/assets/home/emoubb/27.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[得意]"><img src="/assets/home/emoubb/28.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[鄙视]"><img src="/assets/home/emoubb/29.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[猪头]"><img src="/assets/home/emoubb/30.gif" alt=""></li>
+                                	</ul>
+            </div>
+        </li>
+	</ul>
+	<!-- qq登录 -->
+<span id="qqLoginBtn" style="display: none;"></span>
+</div>
+<div id="sheng1" style="width:200px;height:50px;position:fixed;left:0;bottom:200px;"></div>
+<!-- 待克隆表情包 -->
+<div class="shengClone" style="display: none;">
+	<div class="Expression cloneOne">
+            	<ul>
+                                            <li class="ExpressionImg" imgNum="[惊呆]"><img src="/assets/home/emoubb/1.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[可爱]"><img src="/assets/home/emoubb/2.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[憨笑]"><img src="/assets/home/emoubb/3.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[坏笑]"><img src="/assets/home/emoubb/4.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[无聊]"><img src="/assets/home/emoubb/5.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[生气]"><img src="/assets/home/emoubb/6.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[折磨]"><img src="/assets/home/emoubb/7.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不屑]"><img src="/assets/home/emoubb/8.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[流泪]"><img src="/assets/home/emoubb/9.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不理]"><img src="/assets/home/emoubb/10.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[晕]"><img src="/assets/home/emoubb/11.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[冷汗]"><img src="/assets/home/emoubb/12.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[困]"><img src="/assets/home/emoubb/13.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[害羞]"><img src="/assets/home/emoubb/14.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[呐喊]"><img src="/assets/home/emoubb/15.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[稀罕]"><img src="/assets/home/emoubb/16.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[色]"><img src="/assets/home/emoubb/17.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[酷]"><img src="/assets/home/emoubb/18.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[石化]"><img src="/assets/home/emoubb/19.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[囧]"><img src="/assets/home/emoubb/20.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[睡觉]"><img src="/assets/home/emoubb/21.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[调皮]"><img src="/assets/home/emoubb/22.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[亲亲]"><img src="/assets/home/emoubb/23.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[疑问]"><img src="/assets/home/emoubb/24.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[闭嘴]"><img src="/assets/home/emoubb/25.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[难过]"><img src="/assets/home/emoubb/26.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[好奇]"><img src="/assets/home/emoubb/27.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[得意]"><img src="/assets/home/emoubb/28.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[鄙视]"><img src="/assets/home/emoubb/29.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[猪头]"><img src="/assets/home/emoubb/30.gif" alt=""></li>
+                                	</ul>
+    </div>
+</div>
+</body>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<script>
+    $(function(){
+       uParse('.content', {
+            rootPath: '/assets/ueditor/'
+        });
+    });
+</script>
+</html>   <!-- <img src="/assets/home/img/glyphicons-halflings-white.png" alt="搜索"> -->
+    <div class="clearfix"></div>
+    <div class="footer" style="margin:0 auto;margin-top: 20px;width: 1100px;height: 30px;line-height: 30px;color:#666;">
+        Powered by:七秒记忆网&nbsp;&nbsp;网站备案号：<a href="http://www.miitbeian.gov.cn" target="_blank">皖ICP备13016713号-2</a>&nbsp;&nbsp;<font size="4">&COPY;</font>2016-2018
+    </div>
+";i:1;N;}i:1;N;}

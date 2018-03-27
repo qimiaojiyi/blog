@@ -1,0 +1,223 @@
+a:2:{i:0;a:2:{i:0;s:22582:"<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta property="qc:admins" content="043453532776115117211163757" />
+    <title>如何开发以及经营个人网站-七秒记忆网</title>
+    <meta name="keywords" content="如何开发以及经营个人网站-七秒记忆网,个人博客,七秒记忆,技术博客,技术分享-七秒记忆网" />
+    <meta name="description" content="如何开发以及经营个人网站" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!--百度统计-->
+    <script>
+    var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b4b71ff95b7da5cd96d1bbe1c34ec647";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+    <link rel="stylesheet" href="/assets/home/css/base.css"/>
+    <link rel="stylesheet" href="/assets/home/css/laypage.css"/>
+    <link rel="stylesheet" href="/assets/home/css/style.css"/>
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/home/js/jquery.easing.min.js"></script>
+    <script src="/assets/home/js/laypage.js"></script>
+    <script src="/assets/home/js/cookie.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/assets/home/js/xss.min.js"></script>
+    <script src="/assets/home/js/main.js"></script>
+     <!-- 引入文件 -->
+    <!-- 指定回调地址，同时回调地址要与申请的回调地址一致 -->
+    <script type="text/javascript" src="https://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101340021" data-redirecturi="https://www.qimiaojiyi.com/qqcontect/sheng.html" charset="utf-8"></script>
+</head>
+<body>
+   <div class="header">
+       <ul class="navBar">
+           <li class="nav"><a href="/" >首页</a></li>
+           <li class="nav"><a href="/home/front" >前端</a></li>
+           <li class="nav"><a href="/home/back" >后端</a></li>
+           <li class="nav"><a href="/home/system" >运维</a></li>
+           <li class="nav"><a href="/home/zatan" class="lineOn">网络杂谈</a></li>
+           <li class="nav"><a href="/home/leavemsg" >给我留言</a></li>
+       </ul>
+       <!--<p class="search">
+           <input type="text" id="serachText" placeholder="搜索"><a href="#" id="serachSbmit"><img src="/assets/home/img/glyphicons-halflings-white.png" alt="搜索"></a>
+       </p>-->
+       <div class="linestyle">
+             <div class="lineHover" style="display: none;"></div>
+       </div>
+       
+   </div>
+   <script type="text/javascript" charset="utf-8" src="/assets/ueditor/ueditor.parse.min.js"></script>
+<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101340021" data-redirecturi="http://www.qimiaojiyi.com/qqcontect/sheng.html" charset="utf-8"></script>
+<div class="bodys">
+   <div class="article">
+			<ul class="right list">
+                            <li style="padding-top:0px;">
+                                    <img src="/uploads/avatar/a36dedd4bea2543/8f14e45fce.png" style="float: left;width:35px;vertical-align:middle;margin-right: 10px;border-radius: 50%;">
+                                    <h4 articleid=1 class="onlyId">如何开发以及经营个人网站</h4>
+                                    <div class="tool">
+			               <p>
+			                    <span class="time"><span class="icon"></span>2016-08-23</span>
+			                    <span class="autour"><span class="icon"></span>hito</span>
+			                    <span class="clicks" id="1">
+			                        <span class="icon"></span>
+			                        <span class="number">26</span>
+			                        <span class="title">您已赞过...</span>
+			                    </span>
+			               </p>
+			               <div class="bdsharebuttonbox shares"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_bdysc" data-cmd="bdysc" title="分享到百度云收藏"></a></div>
+			           </div>
+			               <div class="content text">
+			               <p>先说些闲话，本人网络专业，现在看起来貌似是烂大街的专业，毕业后的四年时间都从事着IDC机房运维的工作，一直以来都是过着昼夜两班倒的生活，在机房的工作时间越长，越觉得生活枯燥无味，好在当时的工作闲余的时间多。从13年起就想着做一些改变，首先想到的是我要拥有一个自己的网站，恰巧一个偶然的机会，接触到了一个名叫‘discuz’的论坛模版，于是某个夜班的日子，满怀期待的注册了域名，又在之后的一个月之内完成了域名备案，买了一个很便宜的网站空间，便安装上了discuz论坛。之后的一段日子，就到处拉着身边的朋友来看自己的网站，当时觉得自己好像很了不起的样子。</p><p>之后，问题来了，我不知道自己该做些什么内容的网站，当时喜欢穷游，心想着那就做有关于吃喝玩乐的论坛网站吧，于是厚着脸皮拉着朋友一起写些关于吃喝玩乐的文章，当然，一开始是各种网上扒来的内容，原创几乎为零，时间一长，就会觉得这样做下去没有意义。于是又开始想办法，当时上班的地方在福建，觉得很多景点很值得介绍，想到要去买个单反，趁着休息的时间出去拍些游记回来当文章资料，后来也确实是这样做了，但新的问题又来了，当时使用的是discuz默认模版，蓝色调的那种，千遍一律的论坛样式，对很多页面排版自己都非常不满意，而当时也是什么都不懂，有时想改一下某个地方的样式，都得付费找别人做。后来就干脆花钱去买别人的整套模版来，然而排版方面还是不能满足自己随之而来的需求，一年不到的时间前前后后换了三个模版，近2000多的购买和修改费用，而且，作为一个论坛性质的网站，重要的是流量量和活跃程度，当时靠着一个人写些游记，奋斗了些时日，终没有拉来关注，最终网站在一年之后就关了。实在是没有做下去的动力了。</p><p>这期间，从当初我设想的结果回看（当时心想有朝一日，网站能在网上小有名气），这个网站什么意义都没有体现出来，也就徒劳无获。</p><p>后来突然想明白了，这也是这篇文章想要表达的内容，对于个人站长而言，需要经营论坛性质类型的网站是很困难的，这也是为什么当时很多个人站长很钟情于个人博客系统。</p><p>----------------------------分割线--------------------------------</p><p>那么，对于个人站长而言，要如何选择，同时还要具备什么样的技能呢？</p><p>第一：网站类型选择上一定要选个人能力能经营的，文章博客类最好的推荐，至于社交方面的，下面会提到如何去做。</p><p>第二：个人站长需要具备一定的网站编写能力，熟悉HTML、CSS、JS这三门前端的标签语言，至于后台语言，基于个人喜好和就上手和开发速度而言，首推PHP。至于Java、Jsp、ASP、ASP.NET以及其它的编程语言，如果有兴趣者请自行上网了解。</p><p>第三：网站优化，个人网站的优化着重于网站的SEO优化，对于网站的访问或是运行效率上的优化是基于大型网站必须要考虑的。</p><p>第四：网站的运营方面，做好内容很重要，内容需求决定了你的网站是否可以走下去。</p><p>上面提到了关于社交类型的网站如何去做，在基于上述必须具备的能力前提下，你必须要有产品开发能力。这并不像你在生活中买东西，不是你看到什么东西市场需求高就去批发过来倒卖出去就行的，所以个人并不看好你去找一个网上的开源系统安装起来然后去经营他，你可以拿来学习研究它的技术，但请记住一定不要把它直接搬过来用，至少你要学会如何去搞它的二次开发，让它能满足自己的产品设计需求。也就是说你要让它变成你想要的衍生产品，而不是你去讲究它从而改变产品设计。说到底，做这类的网站，请先选择一门开发语言，学好它，然后再使用它为自己的网站添砖加瓦。</p><p><br/></p><p>每个人在世界上都是唯一的，要做到与众不同，就要拥有自己的特色，走得进人群，让别人看得见你，然后坚持下去。</p><p><br/></p><p>最后分享下本站的相关信息</p><p>开发语言：PHP</p><p>设计和开发人员：hito以及superSheng11</p><p>模版：没有使用市面上的cms系统，纯个人原生开发</p><p><br/></p><p>服务器信息：</p><p>阿里云服务器通用版（详细配置请上阿里云官网查看）</p><p>系统：centos6.5 64位</p><p>环境：php + apache + mysql</p><p>PHP框架：yii</p><p><br/></p><p>&nbsp;</p><p><br/></p>			           </div>
+			       </li>
+			</ul>
+			<ul class="connect">
+                            <h5><i class="relative-article"></i>相关文章</h5>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/32.html" class="connectLink">值得推荐的个人技术博</a><span>2017-06-13</span>
+                                </li>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/16.html" class="connectLink">一起看看php程序员</a><span>2016-11-01</span>
+                                </li>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/7.html" class="connectLink">MEIZU xpos</a><span>2016-09-18</span>
+                                </li>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/1.html" class="connectLink">如何开发以及经营个人</a><span>2016-08-23</span>
+                                </li>
+			        			</ul>
+			<ul class="connect Label">
+		          <h5><span></span>文章分类</h5>
+                          		          <li><a href="/home/childtype/typeid/21" class="LabelLink">Yaf</a></li>
+                          		          <li><a href="/home/childtype/typeid/20" class="LabelLink">ThinkPHP</a></li>
+                          		          <li><a href="/home/childtype/typeid/19" class="LabelLink">Yii</a></li>
+                          		          <li><a href="/home/childtype/typeid/18" class="LabelLink">开发框架</a></li>
+                          		          <li><a href="/home/childtype/typeid/16" class="LabelLink">科技</a></li>
+                          		          <li><a href="/home/childtype/typeid/15" class="LabelLink">Mysql</a></li>
+                          		          <li><a href="/home/childtype/typeid/14" class="LabelLink">Linux</a></li>
+                          		          <li><a href="/home/childtype/typeid/13" class="LabelLink">Windows</a></li>
+                          		          <li><a href="/home/childtype/typeid/12" class="LabelLink">JavaScript</a></li>
+                          		          <li><a href="/home/childtype/typeid/11" class="LabelLink">Css</a></li>
+                          		          <li><a href="/home/childtype/typeid/10" class="LabelLink">HTML</a></li>
+                          		    </ul>
+	</div>	    
+    <!--相关评论 -->
+    <h4 class="comment">相关评论:</h4>
+    <ul class="commentList">
+       
+    </ul>
+
+    <!-- 分页 -->
+    <div class="_LookMore" style="display: none;">查看更多</div>
+	<div id="biuuu_city"></div>
+	<!-- 留言 -->
+	<ul class="commentSbmit">
+        <li class="_personShow" style="text-align:left">
+            <img src="/assets/home/img/default.jpg" alt="">
+            <span style="display: none">退出登录</span>
+        </li>
+        <li class="myself">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <p><img src="/assets/home/img/1.jpg" alt=""></p>
+            <div class="shengMessage">发布</div>
+            <div class="Expression shengHidden bottomReply">
+            	<ul>    
+                                            <li class="ExpressionImg" imgNum="[惊呆]"><img src="/assets/home/emoubb/1.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[可爱]"><img src="/assets/home/emoubb/2.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[憨笑]"><img src="/assets/home/emoubb/3.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[坏笑]"><img src="/assets/home/emoubb/4.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[无聊]"><img src="/assets/home/emoubb/5.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[生气]"><img src="/assets/home/emoubb/6.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[折磨]"><img src="/assets/home/emoubb/7.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不屑]"><img src="/assets/home/emoubb/8.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[流泪]"><img src="/assets/home/emoubb/9.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不理]"><img src="/assets/home/emoubb/10.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[晕]"><img src="/assets/home/emoubb/11.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[冷汗]"><img src="/assets/home/emoubb/12.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[困]"><img src="/assets/home/emoubb/13.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[害羞]"><img src="/assets/home/emoubb/14.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[呐喊]"><img src="/assets/home/emoubb/15.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[稀罕]"><img src="/assets/home/emoubb/16.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[色]"><img src="/assets/home/emoubb/17.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[酷]"><img src="/assets/home/emoubb/18.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[石化]"><img src="/assets/home/emoubb/19.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[囧]"><img src="/assets/home/emoubb/20.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[睡觉]"><img src="/assets/home/emoubb/21.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[调皮]"><img src="/assets/home/emoubb/22.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[亲亲]"><img src="/assets/home/emoubb/23.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[疑问]"><img src="/assets/home/emoubb/24.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[闭嘴]"><img src="/assets/home/emoubb/25.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[难过]"><img src="/assets/home/emoubb/26.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[好奇]"><img src="/assets/home/emoubb/27.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[得意]"><img src="/assets/home/emoubb/28.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[鄙视]"><img src="/assets/home/emoubb/29.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[猪头]"><img src="/assets/home/emoubb/30.gif" alt=""></li>
+                                	</ul>
+            </div>
+        </li>
+	</ul>
+	<!-- qq登录 -->
+<span id="qqLoginBtn" style="display: none;"></span>
+</div>
+<div id="sheng1" style="width:200px;height:50px;position:fixed;left:0;bottom:200px;"></div>
+<!-- 待克隆表情包 -->
+<div class="shengClone" style="display: none;">
+	<div class="Expression cloneOne">
+            	<ul>
+                                            <li class="ExpressionImg" imgNum="[惊呆]"><img src="/assets/home/emoubb/1.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[可爱]"><img src="/assets/home/emoubb/2.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[憨笑]"><img src="/assets/home/emoubb/3.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[坏笑]"><img src="/assets/home/emoubb/4.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[无聊]"><img src="/assets/home/emoubb/5.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[生气]"><img src="/assets/home/emoubb/6.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[折磨]"><img src="/assets/home/emoubb/7.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不屑]"><img src="/assets/home/emoubb/8.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[流泪]"><img src="/assets/home/emoubb/9.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不理]"><img src="/assets/home/emoubb/10.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[晕]"><img src="/assets/home/emoubb/11.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[冷汗]"><img src="/assets/home/emoubb/12.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[困]"><img src="/assets/home/emoubb/13.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[害羞]"><img src="/assets/home/emoubb/14.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[呐喊]"><img src="/assets/home/emoubb/15.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[稀罕]"><img src="/assets/home/emoubb/16.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[色]"><img src="/assets/home/emoubb/17.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[酷]"><img src="/assets/home/emoubb/18.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[石化]"><img src="/assets/home/emoubb/19.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[囧]"><img src="/assets/home/emoubb/20.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[睡觉]"><img src="/assets/home/emoubb/21.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[调皮]"><img src="/assets/home/emoubb/22.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[亲亲]"><img src="/assets/home/emoubb/23.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[疑问]"><img src="/assets/home/emoubb/24.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[闭嘴]"><img src="/assets/home/emoubb/25.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[难过]"><img src="/assets/home/emoubb/26.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[好奇]"><img src="/assets/home/emoubb/27.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[得意]"><img src="/assets/home/emoubb/28.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[鄙视]"><img src="/assets/home/emoubb/29.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[猪头]"><img src="/assets/home/emoubb/30.gif" alt=""></li>
+                                	</ul>
+    </div>
+</div>
+</body>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<script>
+    $(function(){
+       uParse('.content', {
+            rootPath: '/assets/ueditor/'
+        });
+    });
+</script>
+</html>   <!-- <img src="/assets/home/img/glyphicons-halflings-white.png" alt="搜索"> -->
+    <div class="clearfix"></div>
+    <div class="footer" style="margin:0 auto;margin-top: 20px;width: 1100px;height: 30px;line-height: 30px;color:#666;">
+        Powered by:七秒记忆网&nbsp;&nbsp;网站备案号：<a href="http://www.miitbeian.gov.cn" target="_blank">皖ICP备13016713号-2</a>&nbsp;&nbsp;<font size="4">&COPY;</font>2016-2018
+    </div>
+";i:1;N;}i:1;N;}

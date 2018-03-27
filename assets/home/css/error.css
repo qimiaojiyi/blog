@@ -1,0 +1,60 @@
+/*
+@Company    Expoon.com
+@Author     Libra 
+@Email      316942723@qq.com
+*/
+/* 
+    Created on : 2016-8-31, 10:29:47
+    Author     : hito
+*/
+
+.wrap{
+    width: 325px;
+    height: 135px;
+    margin: auto;
+    position: absolute;  
+    top: 0; left: 0; bottom: 0; right: 0;  
+    overflow:auto;
+}
+.error404{
+    width: 302px;
+    height: 76px;
+    background: url(../img/404.png);
+}
+.error500{
+    width: 302px;
+    height: 76px;
+    background: url(../img/500.png);
+}
+.back{
+    width: 302px;
+    text-align: center;
+    line-height: 50px;
+    color:#444;
+    font-size: 13px;
+}
+.wrap_deny{
+    width: 376px;
+    height: 120px;
+    margin: auto;
+    position: absolute;  
+    top: 0; left: 0; bottom: 0; right: 0;  
+    overflow:auto;
+}
+.noprivileges{
+    width: 376px;
+    height: 52px;
+    background: url(../img/deny.png);
+}
+.privileges_back{
+    width: 376px;
+    text-align: center;
+    line-height: 50px;
+    color:#444;
+    font-size: 13px;
+    /*text-decoration:underline;*/
+}
+.back a,.back a:hover,.back a:link,.back a:visited{
+    color:#0066cc;
+}
+

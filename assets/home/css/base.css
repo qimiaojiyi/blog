@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+body,div{
+	margin:0px auto;
+	padding:0px;
+	text-align:center;
+	font-size:13px;
+	font-family: "宋体","Microsoft YaHei";
+}
+img,input,form,dl,p,dd,dt,ul,li,h1,h2,h3,h4,h5,h6,span{
+        font-family: 宋体;
+	padding:0px;
+	margin:0px;
+        color:#444;
+}
+img{
+	border:none;
+}
+a:link,a:visited{
+        font-family: 宋体;
+        color: #444;
+	text-decoration:none;
+}
+li,dd{
+	list-style-type:none;
+}
+.none{
+	display:none;
+}
+.clearfloat{
+	clear:both;
+	height:0px;
+	font-size:0px;
+	overflow:hidden;
+}

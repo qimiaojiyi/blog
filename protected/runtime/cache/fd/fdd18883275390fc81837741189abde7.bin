@@ -1,0 +1,276 @@
+a:2:{i:0;a:2:{i:0;s:25558:"<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta property="qc:admins" content="043453532776115117211163757" />
+    <title>个人站长免费申请ssl证书-七秒记忆网</title>
+    <meta name="keywords" content="个人站长免费申请ssl证书-七秒记忆网,个人博客,七秒记忆,技术博客,技术分享-七秒记忆网" />
+    <meta name="description" content="个人站长免费申请ssl证书" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!--百度统计-->
+    <script>
+    var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b4b71ff95b7da5cd96d1bbe1c34ec647";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+    <link rel="stylesheet" href="/assets/home/css/base.css"/>
+    <link rel="stylesheet" href="/assets/home/css/laypage.css"/>
+    <link rel="stylesheet" href="/assets/home/css/style.css"/>
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/home/js/jquery.easing.min.js"></script>
+    <script src="/assets/home/js/laypage.js"></script>
+    <script src="/assets/home/js/cookie.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/assets/home/js/xss.min.js"></script>
+    <script src="/assets/home/js/main.js"></script>
+     <!-- 引入文件 -->
+    <!-- 指定回调地址，同时回调地址要与申请的回调地址一致 -->
+    <script type="text/javascript" src="https://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101340021" data-redirecturi="https://www.qimiaojiyi.com/qqcontect/sheng.html" charset="utf-8"></script>
+</head>
+<body>
+   <div class="header">
+       <ul class="navBar">
+           <li class="nav"><a href="/" >首页</a></li>
+           <li class="nav"><a href="/home/front" >前端</a></li>
+           <li class="nav"><a href="/home/back" >后端</a></li>
+           <li class="nav"><a href="/home/system" class="lineOn">运维</a></li>
+           <li class="nav"><a href="/home/zatan" >网络杂谈</a></li>
+           <li class="nav"><a href="/home/leavemsg" >给我留言</a></li>
+       </ul>
+       <!--<p class="search">
+           <input type="text" id="serachText" placeholder="搜索"><a href="#" id="serachSbmit"><img src="/assets/home/img/glyphicons-halflings-white.png" alt="搜索"></a>
+       </p>-->
+       <div class="linestyle">
+             <div class="lineHover" style="display: none;"></div>
+       </div>
+       
+   </div>
+   <script type="text/javascript" charset="utf-8" src="/assets/ueditor/ueditor.parse.min.js"></script>
+<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101340021" data-redirecturi="http://www.qimiaojiyi.com/qqcontect/sheng.html" charset="utf-8"></script>
+<div class="bodys">
+   <div class="article">
+			<ul class="right list">
+                            <li style="padding-top:0px;">
+                                    <img src="/uploads/avatar/a36dedd4bea2543/8f14e45fce.png" style="float: left;width:35px;vertical-align:middle;margin-right: 10px;border-radius: 50%;">
+                                    <h4 articleid=40 class="onlyId">个人站长免费申请ssl证书</h4>
+                                    <div class="tool">
+			               <p>
+			                    <span class="time"><span class="icon"></span>01-27</span>
+			                    <span class="autour"><span class="icon"></span>hito</span>
+			                    <span class="clicks" id="40">
+			                        <span class="icon"></span>
+			                        <span class="number">1</span>
+			                        <span class="title">您已赞过...</span>
+			                    </span>
+			               </p>
+			               <div class="bdsharebuttonbox shares"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_bdysc" data-cmd="bdysc" title="分享到百度云收藏"></a></div>
+			           </div>
+			               <div class="content text">
+			               <p>说明：本文使用的是系统是centos 6.5 ，Python 版本是2.6.6，认证网是Let&#39;s Encrypt，亲测有效。</p><p>官网地址：<a href="https://letsencrypt.org/" target="_blank" style="color: rgb(84, 141, 212); text-decoration: underline;"><span style="color: rgb(84, 141, 212);">https://letsencrypt.org/</span></a></p><p>流程步骤：第一步：安装证书。第二步：配置web服务器（Apache或者Nginx等）</p><p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>安装证书流程：</strong><br/></p><p>&nbsp; &nbsp; 1.下载官网提供的代码，Github地址：https://github.com/certbot/certbot，如果系统已经安装有git可以直接执行</p><pre class="brush:html;toolbar:false">git&nbsp;clone&nbsp;https://github.com/letsencrypt/letsencrypt</pre><p>&nbsp; &nbsp; 2. 进入到下载文件目录中</p><pre class="brush:html;toolbar:false">cd&nbsp;letsencrypt</pre><p>&nbsp; 3. 执行命令<br/></p><pre class="brush:html;toolbar:false">./letsencrypt-auto</pre><p>至此证书就安装好了。</p><p>如果出现如下报错：</p><pre class="brush:html;toolbar:false">Certbot&nbsp;doesn&#39;t&nbsp;know&nbsp;how&nbsp;to&nbsp;automatically&nbsp;configure&nbsp;the&nbsp;web&nbsp;server&nbsp;on&nbsp;this&nbsp;system.&nbsp;
+However,&nbsp;it&nbsp;can&nbsp;still&nbsp;get&nbsp;a&nbsp;certificate&nbsp;for&nbsp;you.&nbsp;
+Please&nbsp;run&nbsp;&quot;letsencrypt-auto&nbsp;certonly&quot;&nbsp;to&nbsp;do&nbsp;so.&nbsp;
+You&#39;ll&nbsp;need&nbsp;to&nbsp;manually&nbsp;configure&nbsp;your&nbsp;web&nbsp;server&nbsp;to&nbsp;use&nbsp;the&nbsp;resulting&nbsp;certificate.</pre><p>则可以通过手动来安装证书，步骤如下：（如果以上已经完成，请略过一下手动安装证书步骤）</p><p>&nbsp; &nbsp; 1. 下载证书手动安装包文件</p><pre class="brush:html;toolbar:false">wget&nbsp;https://dl.eff.org/certbot-auto</pre><p>&nbsp;&nbsp;&nbsp;2. 给文件赋予可执行权限<br/></p><pre class="brush:html;toolbar:false">chmod&nbsp;a+x&nbsp;./certbot-auto</pre><p>&nbsp; &nbsp;3. 开始安装</p><pre class="brush:html;toolbar:false">./certbot-auto&nbsp;certonly</pre><p>在接下来的提示中：</p><pre class="brush:html;toolbar:false">How&nbsp;would&nbsp;you&nbsp;like&nbsp;to&nbsp;authenticate&nbsp;with&nbsp;the&nbsp;ACME&nbsp;CA?
+-------------------------------------------------------------------------------
+1:&nbsp;Spin&nbsp;up&nbsp;a&nbsp;temporary&nbsp;webserver&nbsp;(standalone)
+2:&nbsp;Place&nbsp;files&nbsp;in&nbsp;webroot&nbsp;directory&nbsp;(webroot)
+-------------------------------------------------------------------------------
+选择2，网站管理者权限</pre><p>然后填写自己的邮箱（邮箱可以是自己的任何一个，不需要在官网注册的也行），之后的提示中，同意或者Yes就可以了。<br/></p><p>最后成功时如下提示：</p><p>本提示中有生成的证书路径信息，在后来的web服务器配置中需要。</p><pre class="brush:html;toolbar:false">IMPORTANT&nbsp;NOTES:
+&nbsp;-&nbsp;Congratulations!&nbsp;Your&nbsp;certificate&nbsp;and&nbsp;chain&nbsp;have&nbsp;been&nbsp;saved&nbsp;at:
+&nbsp;&nbsp;&nbsp;/etc/letsencrypt/live/www.yourdomain.com/fullchain.pem
+&nbsp;&nbsp;&nbsp;Your&nbsp;key&nbsp;file&nbsp;has&nbsp;been&nbsp;saved&nbsp;at:
+&nbsp;&nbsp;&nbsp;/etc/letsencrypt/live/www.yourdomain.com/privkey.pem
+&nbsp;&nbsp;&nbsp;Your&nbsp;cert&nbsp;will&nbsp;expire&nbsp;on&nbsp;2018-04-26.&nbsp;To&nbsp;obtain&nbsp;a&nbsp;new&nbsp;or&nbsp;tweaked
+&nbsp;&nbsp;&nbsp;version&nbsp;of&nbsp;this&nbsp;certificate&nbsp;in&nbsp;the&nbsp;future,&nbsp;simply&nbsp;run&nbsp;certbot-auto
+&nbsp;&nbsp;&nbsp;again.&nbsp;To&nbsp;non-interactively&nbsp;renew&nbsp;*all*&nbsp;of&nbsp;your&nbsp;certificates,&nbsp;run
+&nbsp;&nbsp;&nbsp;&quot;certbot-auto&nbsp;renew&quot;
+&nbsp;-&nbsp;Your&nbsp;account&nbsp;credentials&nbsp;have&nbsp;been&nbsp;saved&nbsp;in&nbsp;your&nbsp;Certbot
+&nbsp;&nbsp;&nbsp;configuration&nbsp;directory&nbsp;at&nbsp;/etc/letsencrypt.&nbsp;You&nbsp;should&nbsp;make&nbsp;a
+&nbsp;&nbsp;&nbsp;secure&nbsp;backup&nbsp;of&nbsp;this&nbsp;folder&nbsp;now.&nbsp;This&nbsp;configuration&nbsp;directory&nbsp;will
+&nbsp;&nbsp;&nbsp;also&nbsp;contain&nbsp;certificates&nbsp;and&nbsp;private&nbsp;keys&nbsp;obtained&nbsp;by&nbsp;Certbot&nbsp;so
+&nbsp;&nbsp;&nbsp;making&nbsp;regular&nbsp;backups&nbsp;of&nbsp;this&nbsp;folder&nbsp;is&nbsp;ideal.
+&nbsp;-&nbsp;If&nbsp;you&nbsp;like&nbsp;Certbot,&nbsp;please&nbsp;consider&nbsp;supporting&nbsp;our&nbsp;work&nbsp;by:
+
+&nbsp;&nbsp;&nbsp;Donating&nbsp;to&nbsp;ISRG&nbsp;/&nbsp;Let&#39;s&nbsp;Encrypt:&nbsp;&nbsp;&nbsp;https://letsencrypt.org/donate
+&nbsp;&nbsp;&nbsp;Donating&nbsp;to&nbsp;EFF:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://eff.org/donate-le</pre><p><strong>配置系统防火墙</strong></p><pre class="brush:html;toolbar:false">#设置防火墙规则
+iptables&nbsp;-A&nbsp;INPUT&nbsp;-m&nbsp;state&nbsp;--state&nbsp;NEW&nbsp;-m&nbsp;tcp&nbsp;-p&nbsp;tcp&nbsp;--dport&nbsp;443&nbsp;-j&nbsp;ACCEPT
+#重启防火墙
+service&nbsp;iptables&nbsp;restart</pre><p><br/></p><p><strong>配置web服务器(以Apache为例)</strong></p><p>&nbsp; &nbsp; 1. 配置http.conf</p><p>开启httpd-ssl，找到配置文件中 Include conf/extra/httpd-ssl.conf 这一行去掉前面的注释</p><p>&nbsp; &nbsp; 2. 配置httpd-ssl.conf文件，如下</p><pre class="brush:html;toolbar:false">Listen&nbsp;443
+AddType&nbsp;application/x-x509-ca-cert&nbsp;.crt
+AddType&nbsp;application/x-pkcs7-crl&nbsp;.crl
+SSLCipherSuite&nbsp;EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
+SSLProxyCipherSuite&nbsp;EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
+SSLHonorCipherOrder&nbsp;on
+SSLProtocol&nbsp;all&nbsp;-SSLv2&nbsp;-SSLv3
+SSLProxyProtocol&nbsp;all&nbsp;-SSLv2&nbsp;-SSLv3
+SSLPassPhraseDialog&nbsp;builtin
+SSLSessionCache&nbsp;&quot;shmcb:/usr/local/apache2/logs/ssl_scache(512000)&quot;
+SSLSessionCacheTimeout&nbsp;300
+#SSLMutex&nbsp;&quot;file:/usr/local/apache2/logs/ssl_mutex&quot;</pre><p>&nbsp;&nbsp;&nbsp;3. 配置网站虚拟主机文件，如下</p><pre class="brush:html;toolbar:false">&lt;VirtualHost&nbsp;*:443&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;DocumentRoot&nbsp;&quot;/home/www/qimiaojiyi&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;ServerName&nbsp;www.qimiaojiyi.com:443
+&nbsp;&nbsp;&nbsp;&nbsp;SSLEngine&nbsp;on
+&nbsp;&nbsp;&nbsp;&nbsp;SSLCertificateFile&nbsp;/etc/letsencrypt/live/www.yourdomain.com/fullchain.pem
+&nbsp;&nbsp;&nbsp;&nbsp;SSLCertificateKeyFile&nbsp;/etc/letsencrypt/live/www.yourdomain.com/privkey.pem
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Directory&nbsp;&quot;/home/www/qimiaojiyi&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SetOutputFilter&nbsp;DEFLATE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Options&nbsp;FollowSymLinks
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AllowOverride&nbsp;all
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Order&nbsp;deny,allow
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allow&nbsp;from&nbsp;all
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Directory&gt;
+&lt;/VirtualHost&gt;</pre><p>&nbsp; &nbsp;4. 重启web服务器，正常情况下，已经可以通过https://www.yourdomain.com来访问了。本人出现的报错及解决如下</p><pre class="brush:html;toolbar:false">1.
+Invalid&nbsp;command&nbsp;&#39;SSLMutex&#39;,&nbsp;perhaps&nbsp;misspelled&nbsp;or&nbsp;defined&nbsp;by&nbsp;a&nbsp;module&nbsp;not&nbsp;included&nbsp;in&nbsp;the&nbsp;
+server&nbsp;configuration
+解决方法：注释掉httpd-ssl.conf文件中的#SSLMutex&nbsp;&quot;file:/usr/local/apache2/logs/ssl_mutex&quot;
+2.
+&nbsp;Cannot&nbsp;load&nbsp;modules/mod_ssl.so&nbsp;into&nbsp;server:&nbsp;/usr/local/apache2/modules/mod_ssl.so:&nbsp;
+&nbsp;undefined&nbsp;symbol:&nbsp;GENERAL_NAME_free
+解决方法：Apache没有mod_ssl.so模块，可以重新编译安装mod_ssl.so
+去官网下载你安装的apache版本，将Apache源码包中的modules文件夹和loggers文件夹复制到当前安装的Apache路径，
+然后在系统中Apache环境路径中执行：
+apxs&nbsp;-i&nbsp;-c&nbsp;-a&nbsp;-D&nbsp;HAVE_OPENSSL=1&nbsp;-I&nbsp;/usr/include/openssl&nbsp;-lcrypto&nbsp;-lssl&nbsp;-ldl&nbsp;*.c</pre><p>最后重启Apache。</p><p>一般配置好https后，需要将原来的http访问重定向到https上，这里可以通过rewrite重写来实现。</p><p>编辑网站的.htaccess文件，在最下面添加</p><pre class="brush:html;toolbar:false">RewriteEngine&nbsp;on
+RewriteCond&nbsp;%{SERVER_PORT}&nbsp;!^443$
+RewriteCond&nbsp;%{REQUEST_URI}&nbsp;!^/tz.php
+RewriteRule&nbsp;(.*)&nbsp;https://%{SERVER_NAME}/$1&nbsp;[R]</pre><p><br/></p>			           </div>
+			       </li>
+			</ul>
+			<ul class="connect">
+                            <h5><i class="relative-article"></i>相关文章</h5>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/40.html" class="connectLink">个人站长免费申请ss</a><span>01-27</span>
+                                </li>
+			        			</ul>
+			<ul class="connect Label">
+		          <h5><span></span>文章分类</h5>
+                          		          <li><a href="/home/childtype/typeid/21" class="LabelLink">Yaf</a></li>
+                          		          <li><a href="/home/childtype/typeid/20" class="LabelLink">ThinkPHP</a></li>
+                          		          <li><a href="/home/childtype/typeid/19" class="LabelLink">Yii</a></li>
+                          		          <li><a href="/home/childtype/typeid/18" class="LabelLink">开发框架</a></li>
+                          		          <li><a href="/home/childtype/typeid/16" class="LabelLink">科技</a></li>
+                          		          <li><a href="/home/childtype/typeid/15" class="LabelLink">Mysql</a></li>
+                          		          <li><a href="/home/childtype/typeid/14" class="LabelLink">Linux</a></li>
+                          		          <li><a href="/home/childtype/typeid/13" class="LabelLink">Windows</a></li>
+                          		          <li><a href="/home/childtype/typeid/12" class="LabelLink">JavaScript</a></li>
+                          		          <li><a href="/home/childtype/typeid/11" class="LabelLink">Css</a></li>
+                          		          <li><a href="/home/childtype/typeid/10" class="LabelLink">HTML</a></li>
+                          		    </ul>
+	</div>	    
+    <!--相关评论 -->
+    <h4 class="comment">相关评论:</h4>
+    <ul class="commentList">
+       
+    </ul>
+
+    <!-- 分页 -->
+    <div class="_LookMore" style="display: none;">查看更多</div>
+	<div id="biuuu_city"></div>
+	<!-- 留言 -->
+	<ul class="commentSbmit">
+        <li class="_personShow" style="text-align:left">
+            <img src="/assets/home/img/default.jpg" alt="">
+            <span style="display: none">退出登录</span>
+        </li>
+        <li class="myself">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <p><img src="/assets/home/img/1.jpg" alt=""></p>
+            <div class="shengMessage">发布</div>
+            <div class="Expression shengHidden bottomReply">
+            	<ul>    
+                                            <li class="ExpressionImg" imgNum="[惊呆]"><img src="/assets/home/emoubb/1.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[可爱]"><img src="/assets/home/emoubb/2.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[憨笑]"><img src="/assets/home/emoubb/3.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[坏笑]"><img src="/assets/home/emoubb/4.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[无聊]"><img src="/assets/home/emoubb/5.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[生气]"><img src="/assets/home/emoubb/6.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[折磨]"><img src="/assets/home/emoubb/7.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不屑]"><img src="/assets/home/emoubb/8.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[流泪]"><img src="/assets/home/emoubb/9.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不理]"><img src="/assets/home/emoubb/10.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[晕]"><img src="/assets/home/emoubb/11.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[冷汗]"><img src="/assets/home/emoubb/12.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[困]"><img src="/assets/home/emoubb/13.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[害羞]"><img src="/assets/home/emoubb/14.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[呐喊]"><img src="/assets/home/emoubb/15.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[稀罕]"><img src="/assets/home/emoubb/16.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[色]"><img src="/assets/home/emoubb/17.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[酷]"><img src="/assets/home/emoubb/18.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[石化]"><img src="/assets/home/emoubb/19.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[囧]"><img src="/assets/home/emoubb/20.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[睡觉]"><img src="/assets/home/emoubb/21.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[调皮]"><img src="/assets/home/emoubb/22.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[亲亲]"><img src="/assets/home/emoubb/23.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[疑问]"><img src="/assets/home/emoubb/24.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[闭嘴]"><img src="/assets/home/emoubb/25.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[难过]"><img src="/assets/home/emoubb/26.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[好奇]"><img src="/assets/home/emoubb/27.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[得意]"><img src="/assets/home/emoubb/28.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[鄙视]"><img src="/assets/home/emoubb/29.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[猪头]"><img src="/assets/home/emoubb/30.gif" alt=""></li>
+                                	</ul>
+            </div>
+        </li>
+	</ul>
+	<!-- qq登录 -->
+<span id="qqLoginBtn" style="display: none;"></span>
+</div>
+<div id="sheng1" style="width:200px;height:50px;position:fixed;left:0;bottom:200px;"></div>
+<!-- 待克隆表情包 -->
+<div class="shengClone" style="display: none;">
+	<div class="Expression cloneOne">
+            	<ul>
+                                            <li class="ExpressionImg" imgNum="[惊呆]"><img src="/assets/home/emoubb/1.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[可爱]"><img src="/assets/home/emoubb/2.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[憨笑]"><img src="/assets/home/emoubb/3.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[坏笑]"><img src="/assets/home/emoubb/4.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[无聊]"><img src="/assets/home/emoubb/5.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[生气]"><img src="/assets/home/emoubb/6.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[折磨]"><img src="/assets/home/emoubb/7.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不屑]"><img src="/assets/home/emoubb/8.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[流泪]"><img src="/assets/home/emoubb/9.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不理]"><img src="/assets/home/emoubb/10.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[晕]"><img src="/assets/home/emoubb/11.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[冷汗]"><img src="/assets/home/emoubb/12.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[困]"><img src="/assets/home/emoubb/13.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[害羞]"><img src="/assets/home/emoubb/14.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[呐喊]"><img src="/assets/home/emoubb/15.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[稀罕]"><img src="/assets/home/emoubb/16.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[色]"><img src="/assets/home/emoubb/17.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[酷]"><img src="/assets/home/emoubb/18.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[石化]"><img src="/assets/home/emoubb/19.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[囧]"><img src="/assets/home/emoubb/20.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[睡觉]"><img src="/assets/home/emoubb/21.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[调皮]"><img src="/assets/home/emoubb/22.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[亲亲]"><img src="/assets/home/emoubb/23.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[疑问]"><img src="/assets/home/emoubb/24.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[闭嘴]"><img src="/assets/home/emoubb/25.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[难过]"><img src="/assets/home/emoubb/26.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[好奇]"><img src="/assets/home/emoubb/27.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[得意]"><img src="/assets/home/emoubb/28.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[鄙视]"><img src="/assets/home/emoubb/29.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[猪头]"><img src="/assets/home/emoubb/30.gif" alt=""></li>
+                                	</ul>
+    </div>
+</div>
+</body>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<script>
+    $(function(){
+       uParse('.content', {
+            rootPath: '/assets/ueditor/'
+        });
+    });
+</script>
+</html>   <!-- <img src="/assets/home/img/glyphicons-halflings-white.png" alt="搜索"> -->
+    <div class="clearfix"></div>
+    <div class="footer" style="margin:0 auto;margin-top: 20px;width: 1100px;height: 30px;line-height: 30px;color:#666;">
+        Powered by:七秒记忆网&nbsp;&nbsp;网站备案号：<a href="http://www.miitbeian.gov.cn" target="_blank">皖ICP备13016713号-2</a>&nbsp;&nbsp;<font size="4">&COPY;</font>2016-2018
+    </div>
+";i:1;N;}i:1;N;}

@@ -1,0 +1,211 @@
+a:2:{i:0;a:2:{i:0;s:25802:"<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta property="qc:admins" content="043453532776115117211163757" />
+    <title>SSH 密钥登录(两种方法)-七秒记忆网</title>
+    <meta name="keywords" content="SSH 密钥登录(两种方法)-七秒记忆网,个人博客,七秒记忆,技术博客,技术分享-七秒记忆网" />
+    <meta name="description" content="SSH 密钥登录(两种方法)" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!--百度统计-->
+    <script>
+    var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b4b71ff95b7da5cd96d1bbe1c34ec647";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+    <link rel="stylesheet" href="/assets/home/css/base.css"/>
+    <link rel="stylesheet" href="/assets/home/css/laypage.css"/>
+    <link rel="stylesheet" href="/assets/home/css/style.css"/>
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/home/js/jquery.easing.min.js"></script>
+    <script src="/assets/home/js/laypage.js"></script>
+    <script src="/assets/home/js/cookie.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/assets/home/js/xss.min.js"></script>
+    <script src="/assets/home/js/main.js"></script>
+     <!-- 引入文件 -->
+    <!-- 指定回调地址，同时回调地址要与申请的回调地址一致 -->
+    <script type="text/javascript" src="https://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101340021" data-redirecturi="https://www.qimiaojiyi.com/qqcontect/sheng.html" charset="utf-8"></script>
+</head>
+<body>
+   <div class="header">
+       <ul class="navBar">
+           <li class="nav"><a href="/" >首页</a></li>
+           <li class="nav"><a href="/home/front" >前端</a></li>
+           <li class="nav"><a href="/home/back" >后端</a></li>
+           <li class="nav"><a href="/home/system" class="lineOn">运维</a></li>
+           <li class="nav"><a href="/home/zatan" >网络杂谈</a></li>
+           <li class="nav"><a href="/home/leavemsg" >给我留言</a></li>
+       </ul>
+       <!--<p class="search">
+           <input type="text" id="serachText" placeholder="搜索"><a href="#" id="serachSbmit"><img src="/assets/home/img/glyphicons-halflings-white.png" alt="搜索"></a>
+       </p>-->
+       <div class="linestyle">
+             <div class="lineHover" style="display: none;"></div>
+       </div>
+       
+   </div>
+   <script type="text/javascript" charset="utf-8" src="/assets/ueditor/ueditor.parse.min.js"></script>
+<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101340021" data-redirecturi="http://www.qimiaojiyi.com/qqcontect/sheng.html" charset="utf-8"></script>
+<div class="bodys">
+   <div class="article">
+			<ul class="right list">
+                            <li style="padding-top:0px;">
+                                    <img src="/uploads/avatar/a36dedd4bea2543/8f14e45fce.png" style="float: left;width:35px;vertical-align:middle;margin-right: 10px;border-radius: 50%;">
+                                    <h4 articleid=38 class="onlyId">SSH 密钥登录(两种方法)</h4>
+                                    <div class="tool">
+			               <p>
+			                    <span class="time"><span class="icon"></span>2017-09-27</span>
+			                    <span class="autour"><span class="icon"></span>hito</span>
+			                    <span class="clicks" id="38">
+			                        <span class="icon"></span>
+			                        <span class="number">1</span>
+			                        <span class="title">您已赞过...</span>
+			                    </span>
+			               </p>
+			               <div class="bdsharebuttonbox shares"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_bdysc" data-cmd="bdysc" title="分享到百度云收藏"></a></div>
+			           </div>
+			               <div class="content text">
+			               <h1 label="标题居左" style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px;"><span style="font-size: 24px;"><strong><span label="强调" style="font-size: 16px; font-style: italic; font-weight: bold; line-height: 18px;"><span label="明显强调" style="font-size: 16px; font-style: italic; font-weight: bold; color: rgb(51, 153, 204); line-height: 18px;">方法一:</span></span></strong></span></h1><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;" dir="ltr">使用下例中ssky-keygen和ssh-copy-id，仅需通过3个步骤的简单设置而无需输入密码就能登录远程Linux主机。&nbsp;<br/>ssh-keygen 创建公钥和密钥。&nbsp;<br/>ssh-copy-id 把本地主机的公钥复制到远程主机的authorized_keys文件上。<br/>ssh-copy-id 也会给远程主机的用户主目录（home）和~/.ssh, 和~/.ssh/authorized_keys设置合适的权限 。</p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;" dir="ltr"><br/><strong>步骤1: 用 ssh-key-gen命令 在本地主机上创建公钥和密钥</strong><br/></p><table><tbody><tr class="firstRow"><td width="879" valign="top" dir="ltr" style="word-break: break-all; background-color: rgb(49, 133, 155);"><p dir="ltr" style="text-align: left;"><span style="color: rgb(255, 255, 255); font-family: &quot;andale mono&quot;;">ligh@local-host$ ssh-keygen -t&nbsp; rsa</span></p><p style="text-align: left;"><span style="color: rgb(255, 255, 255); font-family: &quot;andale mono&quot;;">Enter file in which to save the key (/home/jsmith/.ssh/id_rsa):[Enter key]&nbsp;</span></p><p style="text-align: left;"><span style="color: rgb(255, 255, 255); font-family: &quot;andale mono&quot;;">Enter passphrase (empty for no passphrase): [Press enter key]</span></p><p style="text-align: left;"><span style="color: rgb(255, 255, 255); font-family: &quot;andale mono&quot;;">Enter same passphrase again: [Pess enter key]</span></p><p style="text-align: left;"><span style="color: rgb(255, 255, 255); font-family: &quot;andale mono&quot;;">Your identification has been saved in /home/jsmith/.ssh/id_rsa.</span></p><p style="text-align: left;"><span style="color: rgb(255, 255, 255); font-family: &quot;andale mono&quot;;">Your public key has been saved in /home/jsmith/.ssh/id_rsa.pub.&nbsp;</span></p><p style="text-align: left;"><span style="color: rgb(255, 255, 255); font-family: &quot;andale mono&quot;;">The key fingerprint is: 33:b3:fe:af:95:95:18:11:31:d5:de:96:2f:f2:35:f9&nbsp;</span></p><p style="text-align: left;"><span style="color: rgb(255, 255, 255); font-family: &quot;andale mono&quot;;">ligh@local-host$</span></p></td></tr></tbody></table><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;"><strong>步骤2: 用 ssh-copy-id 把公钥复制到远程主机上</strong><br/></p><table><tbody><tr class="firstRow"><td width="879" valign="top" style="word-break: break-all; background-color: rgb(49, 133, 155);"><p style="text-align: left;"><span style="color: rgb(255, 255, 255);">ligh@local-host$ ssh-copy-id -i ~/.ssh/id_rsa.pub&nbsp; root@192.168.0.3</span></p><p style="text-align: left;"><span style="color: rgb(255, 255, 255);">ligh@remote-host‘s password:</span></p><p style="text-align: left;"><span style="color: rgb(255, 255, 255);">Now try logging into the machine, with ―ssh ?remote-host‘‖, and check in:&nbsp;</span></p><p style="text-align: left;"><span style="color: rgb(255, 255, 255);">.ssh/authorized_keys to make sure we haven‘t added extra keys that you weren‘t expecting.</span></p></td></tr></tbody></table><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;">[注: ssh-copy-id 把密钥追加到远程主机的 .ssh/authorized_key 上.]</p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;"><br/><strong>步骤3: 直接登录远程主机</strong><br/></p><table><tbody><tr class="firstRow"><td width="879" valign="top" style="background-color: rgb(49, 133, 155);"><p style="text-align: left;"><span style="color: rgb(255, 255, 255);">ligh@local-host$ ssh remote-host&nbsp;</span></p><p style="text-align: left;"><span style="color: rgb(255, 255, 255);">Last login: Sun Nov 16 17:22:33 2008 from 192.168.1.2</span></p></td></tr></tbody></table><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;"><br/><strong>[注: SSH 不会询问密码.]&nbsp;</strong></p><table><tbody><tr class="firstRow"><td width="879" valign="top" style="background-color: rgb(49, 133, 155); text-align: left;"><span style="color: rgb(255, 255, 255);">ligh@remote-host$</span></td></tr></tbody></table><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;">[注: 你现在已经登录到了远程主机上]<br/></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;"><span style="color: rgb(216, 216, 216);">http://blog.163.com/lgh_2002/blog/static/44017526201011333227161/</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;"><br/></p><h1 label="标题居左" style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px;"><strong><span style="font-size: 24px;"><span label="明显强调" style="font-size: 16px; font-style: italic; font-weight: bold; color: rgb(51, 153, 204); line-height: 18px;">方法二</span></span></strong></h1><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;">一、概述</p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;">1、就是为了让两个linux机器之间使用ssh不需要用户名和密码。采用了数字签名RSA或者DSA来完成这个操作</p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;">2、模型分析</p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;">假设 A （192.168.20.59）为客户机器，B（192.168.20.60）为目标机；<br/>要达到的目的：<br/>A机器ssh登录B机器无需输入密码；<br/>加密方式选 rsa|dsa均可以，默认dsa</p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;"><br/></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;">二、具体操作流程&nbsp;</p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;">单向登陆的操作过程（能满足上边的目的）：<br/>1、登录A机器&nbsp;<br/>2、ssh-keygen -t [rsa|dsa]，将会生成密钥文件和私钥文件 id_rsa,id_rsa.pub或id_dsa,id_dsa.pub<br/>3、将 .pub 文件复制到B机器的 .ssh 目录，&nbsp;并 cat id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys<br/>4、大功告成，从A机器登录B机器的目标账户，不再需要密码了；（直接运行<strong>&nbsp;#ssh 192.168.20.60</strong>&nbsp;）</p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left;"><span style="font-family: Arial; font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(216, 216, 216);">http://blog.csdn.net/kongqz/article/details/6338690</span></p><p><br/></p>			           </div>
+			       </li>
+			</ul>
+			<ul class="connect">
+                            <h5><i class="relative-article"></i>相关文章</h5>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/40.html" class="connectLink">个人站长免费申请ss</a><span>01-27</span>
+                                </li>
+			        			</ul>
+			<ul class="connect Label">
+		          <h5><span></span>文章分类</h5>
+                          		          <li><a href="/home/childtype/typeid/21" class="LabelLink">Yaf</a></li>
+                          		          <li><a href="/home/childtype/typeid/20" class="LabelLink">ThinkPHP</a></li>
+                          		          <li><a href="/home/childtype/typeid/19" class="LabelLink">Yii</a></li>
+                          		          <li><a href="/home/childtype/typeid/18" class="LabelLink">开发框架</a></li>
+                          		          <li><a href="/home/childtype/typeid/16" class="LabelLink">科技</a></li>
+                          		          <li><a href="/home/childtype/typeid/15" class="LabelLink">Mysql</a></li>
+                          		          <li><a href="/home/childtype/typeid/14" class="LabelLink">Linux</a></li>
+                          		          <li><a href="/home/childtype/typeid/13" class="LabelLink">Windows</a></li>
+                          		          <li><a href="/home/childtype/typeid/12" class="LabelLink">JavaScript</a></li>
+                          		          <li><a href="/home/childtype/typeid/11" class="LabelLink">Css</a></li>
+                          		          <li><a href="/home/childtype/typeid/10" class="LabelLink">HTML</a></li>
+                          		    </ul>
+	</div>	    
+    <!--相关评论 -->
+    <h4 class="comment">相关评论:</h4>
+    <ul class="commentList">
+       
+    </ul>
+
+    <!-- 分页 -->
+    <div class="_LookMore" style="display: none;">查看更多</div>
+	<div id="biuuu_city"></div>
+	<!-- 留言 -->
+	<ul class="commentSbmit">
+        <li class="_personShow" style="text-align:left">
+            <img src="/assets/home/img/default.jpg" alt="">
+            <span style="display: none">退出登录</span>
+        </li>
+        <li class="myself">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <p><img src="/assets/home/img/1.jpg" alt=""></p>
+            <div class="shengMessage">发布</div>
+            <div class="Expression shengHidden bottomReply">
+            	<ul>    
+                                            <li class="ExpressionImg" imgNum="[惊呆]"><img src="/assets/home/emoubb/1.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[可爱]"><img src="/assets/home/emoubb/2.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[憨笑]"><img src="/assets/home/emoubb/3.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[坏笑]"><img src="/assets/home/emoubb/4.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[无聊]"><img src="/assets/home/emoubb/5.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[生气]"><img src="/assets/home/emoubb/6.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[折磨]"><img src="/assets/home/emoubb/7.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不屑]"><img src="/assets/home/emoubb/8.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[流泪]"><img src="/assets/home/emoubb/9.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不理]"><img src="/assets/home/emoubb/10.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[晕]"><img src="/assets/home/emoubb/11.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[冷汗]"><img src="/assets/home/emoubb/12.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[困]"><img src="/assets/home/emoubb/13.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[害羞]"><img src="/assets/home/emoubb/14.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[呐喊]"><img src="/assets/home/emoubb/15.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[稀罕]"><img src="/assets/home/emoubb/16.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[色]"><img src="/assets/home/emoubb/17.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[酷]"><img src="/assets/home/emoubb/18.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[石化]"><img src="/assets/home/emoubb/19.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[囧]"><img src="/assets/home/emoubb/20.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[睡觉]"><img src="/assets/home/emoubb/21.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[调皮]"><img src="/assets/home/emoubb/22.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[亲亲]"><img src="/assets/home/emoubb/23.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[疑问]"><img src="/assets/home/emoubb/24.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[闭嘴]"><img src="/assets/home/emoubb/25.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[难过]"><img src="/assets/home/emoubb/26.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[好奇]"><img src="/assets/home/emoubb/27.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[得意]"><img src="/assets/home/emoubb/28.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[鄙视]"><img src="/assets/home/emoubb/29.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[猪头]"><img src="/assets/home/emoubb/30.gif" alt=""></li>
+                                	</ul>
+            </div>
+        </li>
+	</ul>
+	<!-- qq登录 -->
+<span id="qqLoginBtn" style="display: none;"></span>
+</div>
+<div id="sheng1" style="width:200px;height:50px;position:fixed;left:0;bottom:200px;"></div>
+<!-- 待克隆表情包 -->
+<div class="shengClone" style="display: none;">
+	<div class="Expression cloneOne">
+            	<ul>
+                                            <li class="ExpressionImg" imgNum="[惊呆]"><img src="/assets/home/emoubb/1.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[可爱]"><img src="/assets/home/emoubb/2.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[憨笑]"><img src="/assets/home/emoubb/3.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[坏笑]"><img src="/assets/home/emoubb/4.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[无聊]"><img src="/assets/home/emoubb/5.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[生气]"><img src="/assets/home/emoubb/6.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[折磨]"><img src="/assets/home/emoubb/7.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不屑]"><img src="/assets/home/emoubb/8.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[流泪]"><img src="/assets/home/emoubb/9.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不理]"><img src="/assets/home/emoubb/10.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[晕]"><img src="/assets/home/emoubb/11.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[冷汗]"><img src="/assets/home/emoubb/12.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[困]"><img src="/assets/home/emoubb/13.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[害羞]"><img src="/assets/home/emoubb/14.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[呐喊]"><img src="/assets/home/emoubb/15.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[稀罕]"><img src="/assets/home/emoubb/16.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[色]"><img src="/assets/home/emoubb/17.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[酷]"><img src="/assets/home/emoubb/18.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[石化]"><img src="/assets/home/emoubb/19.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[囧]"><img src="/assets/home/emoubb/20.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[睡觉]"><img src="/assets/home/emoubb/21.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[调皮]"><img src="/assets/home/emoubb/22.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[亲亲]"><img src="/assets/home/emoubb/23.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[疑问]"><img src="/assets/home/emoubb/24.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[闭嘴]"><img src="/assets/home/emoubb/25.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[难过]"><img src="/assets/home/emoubb/26.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[好奇]"><img src="/assets/home/emoubb/27.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[得意]"><img src="/assets/home/emoubb/28.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[鄙视]"><img src="/assets/home/emoubb/29.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[猪头]"><img src="/assets/home/emoubb/30.gif" alt=""></li>
+                                	</ul>
+    </div>
+</div>
+</body>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<script>
+    $(function(){
+       uParse('.content', {
+            rootPath: '/assets/ueditor/'
+        });
+    });
+</script>
+</html>   <!-- <img src="/assets/home/img/glyphicons-halflings-white.png" alt="搜索"> -->
+    <div class="clearfix"></div>
+    <div class="footer" style="margin:0 auto;margin-top: 20px;width: 1100px;height: 30px;line-height: 30px;color:#666;">
+        Powered by:七秒记忆网&nbsp;&nbsp;网站备案号：<a href="http://www.miitbeian.gov.cn" target="_blank">皖ICP备13016713号-2</a>&nbsp;&nbsp;<font size="4">&COPY;</font>2016-2018
+    </div>
+";i:1;N;}i:1;N;}

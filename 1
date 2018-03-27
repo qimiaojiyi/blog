@@ -1,0 +1,41 @@
+<?php
+class Demo
+{
+    # 公钥
+    private $pubkey = '9pkir-psbb1-7c1dd-h3xu6-ad9yb-8sgtr-13emk';
+    # 私钥
+    private $prikey = 'cpwCO-xS$x4-u%bpW-pM8JH-z[p^L-4*QDI-jO/P6';
+    # 请求私有接口
+    private $url = 'https://api.coinnest.co.kr/api/account/balance';
+
+    public function request(){
+        # 公钥
+        $data['key'] = $this->pubkey;
+
+        # 递增的自变量
+        $mt = explode(' ', microtime());
+        $data['nonce'] = $mt[1] . substr($mt[0], 2, 3);
+
+        # 生成签名
+        $signature = hash_hmac('sha256', http_build_query($data), md5($this->prikey));//请务必使用MD5加密您的私钥
+        $data['signature'] = $signature;
+
+        # curl请求设置
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, $this->url);
+        curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8");
+        curl_setopt($curl, CURLOPT_HEADER, 0);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl, CURLOPT_TIMEOUT, 30);
+        curl_setopt($curl, CURLOPT_ENCODING, 'gzip');
+        curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+        $data = curl_exec($curl);
+        curl_close($curl);
+	var_dump($data);die;
+        return json_decode($data, true);
+    }
+}
+$obj = new Demo();
+$data = $obj->request();
+var_dump($data);
+

@@ -1,0 +1,79 @@
+DROP TABLE IF EXISTS `#@__addonarticle`;
+CREATE TABLE `#@__addonarticle` (
+  `aid` mediumint(8) unsigned NOT NULL default '0',
+  `typeid` smallint(5) unsigned NOT NULL default '0',
+  `body` mediumtext,
+  `imgid` smallint(5) unsigned NOT NULL default '0',
+  `userip` char(15) NOT NULL default '',
+  PRIMARY KEY  (`aid`),
+  KEY `typeid` (`typeid`)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS `#@__admin`;
+CREATE TABLE `#@__admin` (
+  `id` int(10) unsigned NOT NULL,
+  `usertype` float unsigned default '0',
+  `userid` char(30) NOT NULL default '',
+  `pwd` char(32) NOT NULL default '',
+  `uname` char(20) NOT NULL default '',
+  `tname` char(30) NOT NULL default '',
+  `email` char(30) NOT NULL default '',
+  `typeid` text,
+  `logintime` int(10) unsigned NOT NULL default '0',
+  `loginip` varchar(20) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS `#@__admintype`;
+CREATE TABLE `#@__admintype` (
+  `rank` float NOT NULL default '1',
+  `typename` varchar(30) NOT NULL default '',
+  `system` smallint(6) NOT NULL default '0',
+  `purviews` text,
+  PRIMARY KEY  (`rank`)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS `#@__archives`;
+CREATE TABLE `#@__archives` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `typeid` smallint(5) unsigned NOT NULL default '0',
+  `sortrank` int(10) unsigned NOT NULL default '0',
+  `flag` set('c','h','p','f','s','j','a','b') default NULL,
+  `model` smallint(6) NOT NULL default '1',
+  `arcrank` smallint(6) NOT NULL default '0',
+  `click` mediumint(8) unsigned NOT NULL default '0',
+  `money` smallint(6) NOT NULL default '0',
+  `title` char(60) NOT NULL default '',
+  `writer` char(20) NOT NULL default '',
+  `litpic` char(100) NOT NULL default '',
+  `pubdate` int(10) unsigned NOT NULL default '0',
+  `senddate` int(10) unsigned NOT NULL default '0',
+  `keywords` char(30) NOT NULL default '',
+  `lastpost` int(10) unsigned NOT NULL default '0',
+  `description` varchar(255) NOT NULL default '',
+  `isdeleted` smallint(5) unsigned NOT NULL default '0'
+  PRIMARY KEY  (`id`),
+  KEY `sortrank` (`sortrank`),
+  KEY `mainindex` (`arcrank`,`typeid`,`model`,`flag`)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS `#@__arctype`;
+CREATE TABLE `#@__arctype` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT '��ID��0Ϊ������',
+  `sortrank` smallint(5) unsigned NOT NULL DEFAULT '50' COMMENT '����',
+  `modeltype` smallint(6) unsigned NOT NULL DEFAULT '1' COMMENT '����ģ��',
+  `typename` char(60) NOT NULL DEFAULT '' COMMENT '��Ŀ����',
+  `ishidden` smallint(6) NOT NULL DEFAULT '0',
+  `isdeleted` smallint(6) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS `#@__model`;
+CREATE TABLE `#@__model` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `modelname` varchar(60) NOT NULL,
+  `relativetable` varchar(10) NOT NULL DEFAULT '' COMMENT '���ӱ�',
+  `isdefault` smallint(5) unsigned NOT NULL DEFAULT '1' COMMENT '�Ƿ�Ĭ��ģ��',
+  PRIMARY KEY (`id`)
+) TYPE=MyISAM;

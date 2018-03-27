@@ -1,0 +1,216 @@
+a:2:{i:0;a:2:{i:0;s:28606:"<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta property="qc:admins" content="043453532776115117211163757" />
+    <title>PHP编译安装时常见错误解决办法-七秒记忆网</title>
+    <meta name="keywords" content="PHP编译安装时常见错误解决办法-七秒记忆网,个人博客,七秒记忆,技术博客,技术分享-七秒记忆网" />
+    <meta name="description" content="PHP编译安装时常见错误解决办法" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!--百度统计-->
+    <script>
+    var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b4b71ff95b7da5cd96d1bbe1c34ec647";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+    <link rel="stylesheet" href="/assets/home/css/base.css"/>
+    <link rel="stylesheet" href="/assets/home/css/laypage.css"/>
+    <link rel="stylesheet" href="/assets/home/css/style.css"/>
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/home/js/jquery.easing.min.js"></script>
+    <script src="/assets/home/js/laypage.js"></script>
+    <script src="/assets/home/js/cookie.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/assets/home/js/xss.min.js"></script>
+    <script src="/assets/home/js/main.js"></script>
+     <!-- 引入文件 -->
+    <!-- 指定回调地址，同时回调地址要与申请的回调地址一致 -->
+    <script type="text/javascript" src="https://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101340021" data-redirecturi="https://www.qimiaojiyi.com/qqcontect/sheng.html" charset="utf-8"></script>
+</head>
+<body>
+   <div class="header">
+       <ul class="navBar">
+           <li class="nav"><a href="/" >首页</a></li>
+           <li class="nav"><a href="/home/front" >前端</a></li>
+           <li class="nav"><a href="/home/back" >后端</a></li>
+           <li class="nav"><a href="/home/system" class="lineOn">运维</a></li>
+           <li class="nav"><a href="/home/zatan" >网络杂谈</a></li>
+           <li class="nav"><a href="/home/leavemsg" >给我留言</a></li>
+       </ul>
+       <!--<p class="search">
+           <input type="text" id="serachText" placeholder="搜索"><a href="#" id="serachSbmit"><img src="/assets/home/img/glyphicons-halflings-white.png" alt="搜索"></a>
+       </p>-->
+       <div class="linestyle">
+             <div class="lineHover" style="display: none;"></div>
+       </div>
+       
+   </div>
+   <script type="text/javascript" charset="utf-8" src="/assets/ueditor/ueditor.parse.min.js"></script>
+<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101340021" data-redirecturi="http://www.qimiaojiyi.com/qqcontect/sheng.html" charset="utf-8"></script>
+<div class="bodys">
+   <div class="article">
+			<ul class="right list">
+                            <li style="padding-top:0px;">
+                                    <img src="/uploads/avatar/a36dedd4bea2543/8f14e45fce.png" style="float: left;width:35px;vertical-align:middle;margin-right: 10px;border-radius: 50%;">
+                                    <h4 articleid=26 class="onlyId">PHP编译安装时常见错误解决办法</h4>
+                                    <div class="tool">
+			               <p>
+			                    <span class="time"><span class="icon"></span>2017-04-10</span>
+			                    <span class="autour"><span class="icon"></span>hito</span>
+			                    <span class="clicks" id="26">
+			                        <span class="icon"></span>
+			                        <span class="number">1</span>
+			                        <span class="title">您已赞过...</span>
+			                    </span>
+			               </p>
+			               <div class="bdsharebuttonbox shares"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_bdysc" data-cmd="bdysc" title="分享到百度云收藏"></a></div>
+			           </div>
+			               <div class="content text">
+			               <p><strong>下面是编译安装php时常见的错误解决办法，浏览者可以使用ctr+F来查找自己的报错，以及通过下方的解决方法来解决</strong></p><p><strong><br/></strong></p><p><strong>configure: error: xslt-config not found. Please reinstall the libxslt &gt;= 1.1.0 distribution</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libxslt-devel</pre><p><br/></p><p><strong style="color: rgb(17, 17, 17); font-family: 宋体, 微软雅黑, Verdana, Helvetica; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"></strong><strong>configure: error: Could not find net-snmp-config binary. Please check your net-snmp installation.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;net-snmp-devel</pre><p><br/></p><p><strong>configure: error: Please reinstall readline - I cannot find readline.h</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;readline-devel</pre><p><br/></p><p><strong>configure: error: Cannot find pspell</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;aspell-devel</pre><p><br/></p><p><strong>checking for unixODBC support... configure: error: ODBC header file &#39;/usr/include/sqlext.h&#39; not found!</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;unixODBC-devel</pre><p><br/></p><p><strong>configure: error: Unable to detect ICU prefix or /usr/bin/icu-config failed. Please verify ICU install prefix and make sure icu-config works.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libicu-devel</pre><p><br/></p><p><strong>configure: error: utf8mime2text() has new signature, but U8TCANONICAL is missing. This should not happen. Check config.log for additional information.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libc-client-devel</pre><p><br/></p><p><strong>configure: error: freetype.h not found.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;freetype-devel</pre><p><br/></p><p><strong>configure: error: xpm.h not found.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libXpm-devel</pre><p><br/></p><p><strong>configure: error: png.h not found.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libpng-devel</pre><p><br/></p><p><strong>configure: error: vpx_codec.h not found.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libvpx-devel</pre><p><br/></p><p><strong>configure: error: Cannot find enchant</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;enchant-devel</pre><p><br/></p><p><strong>configure: error: Please reinstall the libcurl distribution - easy.h should be in /include/curl/</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libcurl-devel</pre><p><br/></p><p><strong>configure: error: mcrypt.h not found. Please reinstall libmcrypt.</strong></p><pre class="brush:html;toolbar:false">wget&nbsp;ftp://mcrypt.hellug.gr/pub/crypto/mcrypt/libmcrypt/libmcrypt-2.5.7.tar.gz
+tar&nbsp;zxf&nbsp;libmcrypt-2.5.7.tar.gz
+cd&nbsp;libmcrypt-2.5.7
+./configure
+make&nbsp;&amp;&amp;&nbsp;make&nbsp;install</pre><p><br/></p><p><strong>added 20141003：</strong></p><p><strong>Cannot find imap</strong></p><pre class="brush:html;toolbar:false">ln&nbsp;-s&nbsp;/usr/lib64/libc-client.so&nbsp;/usr/lib/libc-client.so</pre><p><br/></p><p><strong>configure: error: utf8_mime2text() has new signature, but U8T_CANONICAL is missing.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libc-client-devel</pre><p><br/></p><p><strong>Cannot find ldap.h</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;openldap
+yum&nbsp;-y&nbsp;install&nbsp;openldap-devel</pre><p><br/></p><p><strong>configure: error: Cannot find ldap libraries in /usr/lib</strong></p><pre class="brush:html;toolbar:false">cp&nbsp;-frp&nbsp;/usr/lib64/libldap*&nbsp;/usr/lib/</pre><p><br/></p><p><strong>configure: error: Cannot find libpq-fe.h. Please specify correct PostgreSQL installation path</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;postgresql-devel</pre><p><br/></p><p><strong>configure: error: Please reinstall the lib curl distribution</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;curl-devel</pre><p><br/></p><p><strong>configure: error: Could not find net-snmp-config binary. Please check your net-snmp installation.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;net-snmp-devel</pre><p><br/></p><p><strong>configure: error: xslt-config not found. Please reinstall the libxslt &gt;= 1.1.0 distribution</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libxslt-devel</pre><p><br/></p><p><strong>checking for BZip2 support… yes checking for BZip2 in default path… not found configure: error: Please reinstall the BZip2 distribution</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;bzip2-devel</pre><p><br/></p><p><strong>checking for cURL support… yes checking if we should use cURL for url streams… no checking for cURL in default path… not found configure: error: Please reinstall the libcurl distribution – easy.h should be in/include/curl/</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;curl-devel</pre><p><br/></p><p><strong>checking for curl_multi_strerror in -lcurl… yes checking for QDBM support… no checking for GDBM support… no checking for NDBM support… no configure: error: DBA: Could not find necessary header file(s).</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;db4-devel</pre><p><br/></p><p><strong>checking for fabsf… yes checking for floorf… yes configure: error: jpeglib.h not found.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libjpeg-devel</pre><p><br/></p><p><strong>checking for fabsf… yes checking for floorf… yes checking for jpeg_read_header in -ljpeg… yes configure: error: png.h not found.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libpng-devel</pre><p><br/></p><p><strong>checking for png_write_image in -lpng… yes If configure fails try –with-xpm-dir=</strong></p><p><strong>configure: error: freetype.h not found.</strong></p><pre class="brush:html;toolbar:false">Reconfigure&nbsp;your&nbsp;PHP&nbsp;with&nbsp;the&nbsp;following&nbsp;option.&nbsp;--with-xpm-dir=/usr（检查下freetype安装的路径是否正确）</pre><p><br/></p><p><strong>checking for png_write_image in -lpng… yes configure: error: libXpm.(a|so) not found.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libXpm-devel</pre><p><br/></p><p><strong>checking for bind_textdomain_codeset in -lc… yes checking for GNU MP support… yes configure: error: Unable to locate gmp.h</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;gmp-devel</pre><p><br/></p><p><strong>checking for utf8_mime2text signature… new checking for U8T_DECOMPOSE… configure: error: utf8_mime2text() has new signature, but U8T_CANONICAL is missing. This should not happen. Check config.log for additional information.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libc-client-devel</pre><p><br/></p><p><strong>checking for LDAP support… yes, shared checking for LDAP Cyrus SASL support… yes configure: error: Cannot find ldap.h</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;openldap-devel</pre><p><br/></p><p><strong>checking for mysql_set_character_set in -lmysqlclient… yes checking for mysql_stmt_next_result in -lmysqlclient… no checking for Oracle Database OCI8 support… no checking for unixODBC support… configure: error: ODBC header file ‘/usr/include/sqlext.h&#39; not found!</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;unixODBC-devel</pre><p><br/></p><p><strong>checking for PostgreSQL support for PDO… yes, shared checking for pg_config… not found configure: error: Cannot find libpq-fe.h. Please specify correct PostgreSQL installation path</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;postgresql-devel</pre><p><br/></p><p><strong>checking for sqlite 3 support for PDO… yes, shared checking for PDO includes… (cached) /usr/local/src/php-5.3.7/ext checking for sqlite3 files in default path… not found configure: error: Please reinstall the sqlite3 distribution</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;sqlite-devel</pre><p><br/></p><p><strong>checking for utsname.domainname… yes checking for PSPELL support… yes configure: error: Cannot find pspell</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;aspell-devel</pre><p><br/></p><p><strong>checking whether to enable UCD SNMP hack… yes checking for default_store.h… no</strong></p><p><strong>checking for kstat_read in -lkstat… no checking for snmp_parse_oid in -lsnmp… no checking for init_snmp in -lsnmp… no configure: error: SNMP sanity check failed. Please check config.log for more information.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;net-snmp-devel</pre><p><br/></p><p><strong>checking whether to enable XMLWriter support… yes, shared checking for xml2-config path… (cached) /usr/bin/xml2-config checking whether libxml build works… (cached) yes checking for XSL support… yes, shared configure: error: xslt-config not found. Please reinstall the libxslt &gt;= 1.1.0 distribution</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libxslt-devel</pre><p><br/></p><p><strong>configure: error: xml2-config not found. Please check your libxml2 installation.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libxml2-devel</pre><p><br/></p><p><strong>checking for PCRE headers location… configure: error: Could not find pcre.h in /usr</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;pcre-devel</pre><p><br/></p><p><strong>configure: error: Cannot find MySQL header files under yes. Note that the MySQL client library is not bundled anymore!</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;mysql-devel</pre><p><br/></p><p><strong>checking for unixODBC support… configure: error: ODBC header file ‘/usr/include/sqlext.h&#39; not found!</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;unixODBC-devel</pre><p><br/></p><p><strong>checking for pg_config… not found configure: error: Cannot find libpq-fe.h. Please specify correct PostgreSQL installation path</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;postgresql-devel</pre><p><br/></p><p><strong>configure: error: Cannot find pspell</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;pspell-devel</pre><p><br/></p><p><strong>configure: error: Could not find net-snmp-config binary. Please check your net-snmp installation.</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;net-snmp-devel</pre><p><br/></p><p><strong>configure: error: xslt-config not found. Please reinstall the libxslt &gt;= 1.1.0 distribution</strong></p><pre class="brush:html;toolbar:false">yum&nbsp;-y&nbsp;install&nbsp;libxslt-devel</pre><p><br/></p>			           </div>
+			       </li>
+			</ul>
+			<ul class="connect">
+                            <h5><i class="relative-article"></i>相关文章</h5>
+			        			        <li>
+                                    <i class="items_li"></i>
+                                    <a href="/article/40.html" class="connectLink">个人站长免费申请ss</a><span>01-27</span>
+                                </li>
+			        			</ul>
+			<ul class="connect Label">
+		          <h5><span></span>文章分类</h5>
+                          		          <li><a href="/home/childtype/typeid/21" class="LabelLink">Yaf</a></li>
+                          		          <li><a href="/home/childtype/typeid/20" class="LabelLink">ThinkPHP</a></li>
+                          		          <li><a href="/home/childtype/typeid/19" class="LabelLink">Yii</a></li>
+                          		          <li><a href="/home/childtype/typeid/18" class="LabelLink">开发框架</a></li>
+                          		          <li><a href="/home/childtype/typeid/16" class="LabelLink">科技</a></li>
+                          		          <li><a href="/home/childtype/typeid/15" class="LabelLink">Mysql</a></li>
+                          		          <li><a href="/home/childtype/typeid/14" class="LabelLink">Linux</a></li>
+                          		          <li><a href="/home/childtype/typeid/13" class="LabelLink">Windows</a></li>
+                          		          <li><a href="/home/childtype/typeid/12" class="LabelLink">JavaScript</a></li>
+                          		          <li><a href="/home/childtype/typeid/11" class="LabelLink">Css</a></li>
+                          		          <li><a href="/home/childtype/typeid/10" class="LabelLink">HTML</a></li>
+                          		    </ul>
+	</div>	    
+    <!--相关评论 -->
+    <h4 class="comment">相关评论:</h4>
+    <ul class="commentList">
+       
+    </ul>
+
+    <!-- 分页 -->
+    <div class="_LookMore" style="display: none;">查看更多</div>
+	<div id="biuuu_city"></div>
+	<!-- 留言 -->
+	<ul class="commentSbmit">
+        <li class="_personShow" style="text-align:left">
+            <img src="/assets/home/img/default.jpg" alt="">
+            <span style="display: none">退出登录</span>
+        </li>
+        <li class="myself">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <p><img src="/assets/home/img/1.jpg" alt=""></p>
+            <div class="shengMessage">发布</div>
+            <div class="Expression shengHidden bottomReply">
+            	<ul>    
+                                            <li class="ExpressionImg" imgNum="[惊呆]"><img src="/assets/home/emoubb/1.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[可爱]"><img src="/assets/home/emoubb/2.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[憨笑]"><img src="/assets/home/emoubb/3.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[坏笑]"><img src="/assets/home/emoubb/4.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[无聊]"><img src="/assets/home/emoubb/5.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[生气]"><img src="/assets/home/emoubb/6.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[折磨]"><img src="/assets/home/emoubb/7.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不屑]"><img src="/assets/home/emoubb/8.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[流泪]"><img src="/assets/home/emoubb/9.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不理]"><img src="/assets/home/emoubb/10.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[晕]"><img src="/assets/home/emoubb/11.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[冷汗]"><img src="/assets/home/emoubb/12.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[困]"><img src="/assets/home/emoubb/13.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[害羞]"><img src="/assets/home/emoubb/14.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[呐喊]"><img src="/assets/home/emoubb/15.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[稀罕]"><img src="/assets/home/emoubb/16.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[色]"><img src="/assets/home/emoubb/17.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[酷]"><img src="/assets/home/emoubb/18.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[石化]"><img src="/assets/home/emoubb/19.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[囧]"><img src="/assets/home/emoubb/20.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[睡觉]"><img src="/assets/home/emoubb/21.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[调皮]"><img src="/assets/home/emoubb/22.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[亲亲]"><img src="/assets/home/emoubb/23.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[疑问]"><img src="/assets/home/emoubb/24.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[闭嘴]"><img src="/assets/home/emoubb/25.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[难过]"><img src="/assets/home/emoubb/26.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[好奇]"><img src="/assets/home/emoubb/27.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[得意]"><img src="/assets/home/emoubb/28.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[鄙视]"><img src="/assets/home/emoubb/29.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[猪头]"><img src="/assets/home/emoubb/30.gif" alt=""></li>
+                                	</ul>
+            </div>
+        </li>
+	</ul>
+	<!-- qq登录 -->
+<span id="qqLoginBtn" style="display: none;"></span>
+</div>
+<div id="sheng1" style="width:200px;height:50px;position:fixed;left:0;bottom:200px;"></div>
+<!-- 待克隆表情包 -->
+<div class="shengClone" style="display: none;">
+	<div class="Expression cloneOne">
+            	<ul>
+                                            <li class="ExpressionImg" imgNum="[惊呆]"><img src="/assets/home/emoubb/1.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[可爱]"><img src="/assets/home/emoubb/2.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[憨笑]"><img src="/assets/home/emoubb/3.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[坏笑]"><img src="/assets/home/emoubb/4.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[无聊]"><img src="/assets/home/emoubb/5.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[生气]"><img src="/assets/home/emoubb/6.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[折磨]"><img src="/assets/home/emoubb/7.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不屑]"><img src="/assets/home/emoubb/8.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[流泪]"><img src="/assets/home/emoubb/9.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[不理]"><img src="/assets/home/emoubb/10.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[晕]"><img src="/assets/home/emoubb/11.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[冷汗]"><img src="/assets/home/emoubb/12.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[困]"><img src="/assets/home/emoubb/13.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[害羞]"><img src="/assets/home/emoubb/14.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[呐喊]"><img src="/assets/home/emoubb/15.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[稀罕]"><img src="/assets/home/emoubb/16.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[色]"><img src="/assets/home/emoubb/17.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[酷]"><img src="/assets/home/emoubb/18.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[石化]"><img src="/assets/home/emoubb/19.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[囧]"><img src="/assets/home/emoubb/20.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[睡觉]"><img src="/assets/home/emoubb/21.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[调皮]"><img src="/assets/home/emoubb/22.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[亲亲]"><img src="/assets/home/emoubb/23.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[疑问]"><img src="/assets/home/emoubb/24.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[闭嘴]"><img src="/assets/home/emoubb/25.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[难过]"><img src="/assets/home/emoubb/26.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[好奇]"><img src="/assets/home/emoubb/27.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[得意]"><img src="/assets/home/emoubb/28.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[鄙视]"><img src="/assets/home/emoubb/29.gif" alt=""></li>
+                                            <li class="ExpressionImg" imgNum="[猪头]"><img src="/assets/home/emoubb/30.gif" alt=""></li>
+                                	</ul>
+    </div>
+</div>
+</body>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<script>
+    $(function(){
+       uParse('.content', {
+            rootPath: '/assets/ueditor/'
+        });
+    });
+</script>
+</html>   <!-- <img src="/assets/home/img/glyphicons-halflings-white.png" alt="搜索"> -->
+    <div class="clearfix"></div>
+    <div class="footer" style="margin:0 auto;margin-top: 20px;width: 1100px;height: 30px;line-height: 30px;color:#666;">
+        Powered by:七秒记忆网&nbsp;&nbsp;网站备案号：<a href="http://www.miitbeian.gov.cn" target="_blank">皖ICP备13016713号-2</a>&nbsp;&nbsp;<font size="4">&COPY;</font>2016-2018
+    </div>
+";i:1;N;}i:1;N;}

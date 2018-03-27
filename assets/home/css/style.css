@@ -1,0 +1,875 @@
+.header{
+    width: 1100px;
+    min-width: 1100px;
+    margin:0 auto;
+    height:48px;
+    line-height: 48px;
+    position: relative;
+    border-bottom: 1px solid #ececec;
+}
+.navBar{
+    width: 880px;
+    margin:0 auto;
+    overflow: hidden;
+    float: left;
+}
+.navBar li{
+    float: left;
+}
+.header li{
+    width:147px;
+    float:left;
+    text-align: center;
+    cursor: pointer;
+    margin-left: -1px;
+}
+.header li a{
+    display: block;
+    width: 100%;
+    height: 47px;
+    font-size: 16px;
+    color:#4D4D4D;
+}
+.lineOn{
+    border-bottom: 2px solid #5ea51a;
+}
+.search{
+    width: 200px;
+    height: 22px;
+    float: right;
+    text-align: left;
+    margin-top: 13px;
+}
+#serachText{
+    width: 152px;
+    height: 22px;
+    outline: none;
+    background:#f3f3f3;
+    border:none;
+    line-height: 22px;
+    float: left; 
+    padding-left:5px; 
+}
+#serachSbmit{
+    display: inline-block;
+    width:30px;
+    height: 22px;
+    background-color:#9fc57c;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+#serachSbmit img{
+    position: absolute;
+    left: -39px;
+    top:4px;
+}
+.linestyle{
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+}
+.lineHover{
+    width:147px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top:0;
+    background:#5ea51a;
+}
+.bodys{
+    width:1100px;
+    min-width: 1100px;
+    min-height: 600px;
+    margin:0 auto;
+    margin-top: 30px;
+}
+/*left*/
+.left{
+    margin-left:-275px;
+    float: left;
+    display: none;
+}
+.accordion {
+    width: 100%;
+    max-width: 250px;
+    /*margin: 30px auto 20px;*/
+    background: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 10px 0 10px 0;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordion li.open .link {
+    color: #b63b4d;
+}
+
+.accordion li.open i {
+    color: #b63b4d;
+}
+.accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+.submenu {
+    display: none;
+    background: #444359;
+    font-size: 14px;
+}
+
+.submenu li {
+    border-bottom: 1px solid #4b4a5e;
+}
+
+.submenu a {
+    display: block;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding: 12px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.submenu a:hover {
+    background: #b63b4d;
+    color: #FFF;
+}
+/*右边*/
+.right{
+    width: 800px;
+    min-height: 200px;
+    float: left;
+    padding:1% 1% 2% 0px;
+    font-size: 14px;
+    line-height: 20px;
+    background:white;
+    border-right: 1px solid #f5f5f5;
+    overflow: scroll;
+}
+.right li{
+    border-top: 1px solid #f5f5f5;
+    padding: 20px 0 30px 0;
+    min-height: 150px;
+    margin-top: -12px;
+    overflow: scroll;
+}
+.right h4{
+    font-size: 18px;
+  /*  margin-bottom: 20px;*/
+}
+.right .tool{
+    padding:10px 0;
+    position: relative;
+}
+.tool p{
+    width: 100%;
+    text-align: center;
+   /* background:green;*/
+}
+.tool span{
+    font-size: 12px;
+    color:#a0a0a0;
+    padding:0 15px 0 0;
+    display: inline-block;
+}
+.tool .time .icon,.tool .autour .icon,.tool .type .icon,.tool .clicks .icon{
+   float: left;
+   padding:0;
+   width:19px;
+   height: 20px;
+   background:url(../img/glyphicons-halflings.png) -47px -22px no-repeat;
+}
+.tool .clicks{
+    cursor: pointer;
+}
+.tool .type .icon{
+   background:url(../img/glyphicons-halflings.png) -263px 2px no-repeat;
+}
+.tool .autour .icon{
+   background:url(../img/glyphicons-halflings.png) -167px 2px no-repeat;
+}
+.tool .clicks .icon{
+   background:url(../img/glyphicons-halflings.png) -95px -141px no-repeat;
+}
+.title{
+    opacity: 0;
+    filter:alpha(opacity=0);
+}
+.shares{
+    position: absolute;
+    right: 0;
+    top:5px;
+}
+.right .text{
+    color:#444;
+    text-align: left;
+    //text-indent: 2em;
+    line-height: 24px;
+    font-size: 13px;
+}
+/*列表页*/
+.list h4{
+   text-align: left;
+}
+.list .tool p{
+    text-align: left;
+}
+/*分页*/
+#biuuu_city{
+    width: 800px;
+    margin:20px 0 30px 0;
+}
+.connect{
+    width: 270px;
+    float: right;
+    background:white;
+    overflow: hidden;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+.connect h5{
+    font-size: 14px;
+    line-height: 30px;
+    background:#e2efd3;
+    text-align: left;
+    padding-left: 8px;
+    margin-bottom: 10px;
+}
+.connect li{
+    height:25px;
+    overflow: hidden;
+    min-height: 25px;
+    text-align: left;
+    line-height: 25px;
+    font-size: 13px;
+    padding:2px 8px;
+}
+.connect a{
+    color:#434a54;
+}
+.connect li span{
+    float: right;
+    font-size: 12px;
+    color:#434a54;
+}
+.Label{
+    margin-top: 0px;
+}
+.Label h5{
+    background:white;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+.Label h5 span{
+    float: left;
+    height: 30px;
+    width: 8px;
+    margin-left: -15px;
+    background: #9fc57c;
+}
+.Label li{
+    float: left;
+    padding:5px 10px;
+    border:1px solid #9fc57c;
+    margin:5px;
+}
+/*hito留言页*/
+.webmessage li{
+    min-height:600px;
+}
+.webmessage li h4{
+    height: 46px;
+    background: #ddd;
+    line-height: 46px;
+    padding-left: 15px;
+}
+.social-links{
+    height: 40px;
+}
+.social-links li{
+    list-style: none;
+    display: inline;
+    float: left;
+    padding: 10px 0px 0px 15px;
+    min-height: 25px;
+}
+.message-content{
+    float:left;
+    height: 40px;
+}
+.message-content textarea{
+    width: 100%;
+    border:1px solid #339900;
+    outline: 1px solid #ccffcc;
+    resize: none;
+    height: 80px;
+}
+.message-content input{
+    float: left;
+}
+.clearfix{
+    clear:both;
+}
+.qqimg{
+    float: left;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/qq.png) center center no-repeat;
+}
+.text .details{
+    color:#9fc57c;
+}
+
+.relative-article{
+    background:url('../img/glyphicons-halflings.png');
+    background-position: -50px -50px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-top: 10px;
+}
+/*article comment*/
+.article{
+    width:100%;
+    overflow: hidden;
+}
+.comment{
+   width: 823px;
+   text-align: left;
+   padding-left: 11px;
+   font-size: 14px;
+}
+.commentList{
+    width: 823px;
+    overflow: hidden;
+}
+.commentList li{
+    border-bottom:1px dotted #ebebeb;
+    margin: 10px 1%;
+}
+/***************回复*****************/
+.personTwo{
+    width:720px;
+    overflow: hidden;
+    float: right;
+}
+.personThree{
+    width:620px;
+    overflow: hidden;
+    float: right;
+}
+/************************************/
+.person li{
+    float: left;
+    border:none;
+}
+.picture{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+}
+.picture img{
+    border-radius: 50%;
+}
+.person .commentNews{
+    width: 88%;
+    margin: 10px 0;
+    text-align: left;
+}
+.name1{
+    color:#a7a7a7;
+}
+.speak1{
+    word-wrap: break-word;
+    color:#5c5c5c;
+    margin:5px 0;
+}
+.speak1 img{
+    margin-left: 2px;
+}
+.detailed1 span{
+    color:#a7a7a7;
+}
+.detailed1 .huifu,.detailed1 .agree{
+    margin-left: 20px;
+    cursor:pointer;
+}
+.agree a,.huifu a{
+    color:#a7a7a7;
+}
+.detailed1 .icon1{
+   background:url(../img/glyphicons-halflings.png) -331px -96px no-repeat;
+}
+.detailed1 .icon2{
+   background:url(../img/glyphicons-halflings.png) -91px -1px no-repeat;
+}
+.commentSbmit{
+    overflow: hidden;
+    /*margin-left: 22px;*/
+    padding-bottom: 150px;
+}
+.commentSbmit li{
+   float: left; 
+}
+.commentSbmit li img{
+    width: 45px;
+    height: 45px; 
+}
+/*追加输入框*/
+.afterSubmit{
+    width:100%;
+    height:auto;
+}
+.afterSubmit li{
+   float: left; 
+}
+.afterSubmit li img{
+    width: 35px;
+    height: 35px; 
+}
+.afterSubmit ._personShow{
+    width: 35px;
+    height: 35px;
+}
+.afterMyself{
+    width: 88%;
+    /*height: 100%;*/
+    margin-left: 11px;
+    position: relative;
+}
+.afterMyself textarea{
+    width: 98%;
+    height: 70px;
+    border: 1px solid #9FC57C;
+    overflow: hidden;
+}
+.afterMyself p{
+    float: left;
+    width: 30px;
+    height: 20px;
+}
+.afterMyself p img{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background:url(../img/1.jpg) center center no-repeat; 
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.afterMyself .afterSheng{
+    float: right;
+    width: 60px;
+    height: 30px;
+    background: #9fc57c;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 3px;
+    cursor: pointer;
+    color:white;
+    margin-right: 1%;
+}
+/*表情包*/
+.afterMyself .Expression{
+    width:50%;
+    height: 85px;
+    background: none;
+    overflow-x: hidden;
+    overflow-y:auto; 
+    margin:30px 0 0 0;
+}
+/**********/
+.myself{
+    width: 739px;
+    height: 100px;
+    margin-left: 11px;
+    position: relative;
+}
+.myself textarea{
+    width: 734px;
+    height: 70px;
+    overflow: hidden;
+    resize: none;
+    border:1px solid #9FC57C;
+    outline: none;
+}
+.myself p{
+    float: left;
+    width: 30px;
+    height: 20px;
+}
+.myself p img{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background:url(../img/1.jpg) center center no-repeat; 
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.myself .shengMessage{
+    float: right;
+    width: 60px;
+    height: 30px;
+    background: #9fc57c;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 3px;
+    cursor: pointer;
+    color:white;
+}
+._personShow img{
+    width: 45px;
+    height: 45px;
+}
+._personShow{
+    width: 60px;
+    height: 60px;
+    font-size: 12px;
+}
+._personShow span{
+   cursor: pointer;
+}
+/*表情*/
+.shengHidden{
+   display: none;
+}
+.myself .Expression{
+    width: 338px;
+    height: 85px;
+    margin:30px 0 0 0;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y:auto; 
+}
+.Expression ul{
+    width:101%;
+    overflow: hidden;
+}
+.Expression li{
+    margin:0;
+    float: left;
+    width: 26px;
+    height: 26px;
+    cursor:pointer;
+}
+.Expression .ExpressionImg img{
+    width: 18px;
+    height:18px;
+    margin:4px 0 0 4px;
+}
+/*************查看更多************/
+._LookMore,._shengNews_More{
+    width: 814px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    background: #eee;
+    margin: 37px 0 0 0;
+    cursor: pointer;
+    color: #333;
+}
+/*********************************/
+
+
+/*li标签样式hito*/
+.items_li{
+    display:inline-block;
+    width: 6px;
+    height:6px;
+    background: #666;
+    position:relative;
+    /*border-radius:50%;*/
+    top:-2px;
+}
+/*网站留言样式hito*/
+.livemessage{
+    font-family: 宋体;
+    margin-top: 50px;
+    width: 1100px;
+    min-height: 900px;
+}
+.msg-items{
+    border-right:1px dotted #ccc;
+}
+.msg-items h3{
+    background: url(../img/bg_split.png) repeat-x;
+    margin-left: 0px;
+    float: left;
+    display: block;
+    width: 660px;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+.items-wrap{
+    float:left;
+    padding: 10px 10px 50px 10px;
+    width: 640px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.avatar{
+    float: left;
+    text-align: left;
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+    color:#a7a7a7;
+}
+.items-content{
+    padding-left: 65px;
+}
+.items-content p{
+    word-wrap: break-word;
+    padding: 5px 0px;
+    margin-top: 10px;
+    text-align: left;
+    line-height: 1.4em;
+    position: relative;
+}
+.items-footer{
+    margin-left: 0px;
+    height:20px;
+    line-height: 20px;
+}
+.items-footer span{
+    float: left;
+    padding-right: 10px;
+    color:#a7a7a7;
+}
+.items-footer span:nth-child(2){
+    cursor: pointer;
+}
+.items-info ul li img{
+    float: left;
+}
+.items-info ul li span,.msg-list-items li img{
+    float: left;
+}
+.msg-content{
+    float: left;
+    width: 700px;
+    background: #fff;
+}
+.msg-list{
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    margin-top: 20px;
+    float: left;
+    text-align: left;
+    width: 100%;
+    height: auto;
+}
+.msg-top-total{
+    float: left;
+    color:#444;
+    /*background-color: #8CB391;*/
+    padding: 5px;
+}
+.msg-total{
+    color:#444;
+    /*background-color: #8CB391;*/
+    padding: 5px;
+}
+.msg-list-items{
+    padding-top: 10px;
+}
+.leavemsg-box{
+    margin-top: 20px;
+}
+.msg-textarea{
+    resize: none;
+    float: left;
+    width: 95%;
+    height: 50px;
+    outline: none;
+    border:1px solid #9FC57C;
+    overflow:hidden;
+    padding: 12px;
+    border-bottom: none;
+}
+.msg-emotion-send{
+    width: 99.255%;
+    height: 28px;
+    float: left;
+    border:1px solid #9FC57C;
+    border-top: none;
+}
+.msg-emotion-send .emotion-wrap{
+    float: left;
+    height: 27px;
+    width: 85%;
+/*    border-top:1px solid #9FC57C;
+    border-bottom:1px solid #9FC57C;*/
+    background: #FFF;
+}
+.emotion{
+    position: relative;
+    top:5px;left:13px;
+    float: left;
+    width: 19px;
+    height: 19px;
+    background: url(../img/msgtype.png) no-repeat center center;
+    background-position: 0px -35px;
+    cursor: pointer;
+}
+.emotionhover{
+    position: relative;
+    top:5px;left:13px;
+    float: left;
+    width: 19px;
+    height: 19px;
+    background: url(../img/msgtype.png) no-repeat center center;
+    background-position: 0px 2px;
+    cursor: pointer;
+}
+.msg-emotion-send .emotio{
+    
+}
+.emotion1{
+    position: relative;
+    top:5px;left:13px;
+    float: left;
+    width: 19px;
+    height: 19px;
+    background: url(../img/msgtype.png) no-repeat center center;
+    background-position: 0px -53px;
+    cursor: pointer;
+}
+.emotion1hover{
+    position: relative;
+    top:5px;left:13px;
+    float: left;
+    width: 19px;
+    height: 19px;
+    background: url(../img/msgtype.png) no-repeat center center;
+    background-position: 0px -16px;
+    cursor: pointer;
+}
+.msg-emotion-send .send{
+    float:right;
+    cursor: pointer;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    height: 28px;
+    width: 15%;
+    text-align: center;
+    outline: none;
+    line-height: 28px;
+    background: #9FC57C;
+    color:#fff;
+}
+.qqlogout{
+    margin-top: 60px;
+    cursor: pointer;
+    display:none;
+}
+.livemessage-avatar{
+    width: 54px;
+    float: left;
+}
+._msg_list{
+    display: none;
+}
+.privatemsg{
+    position:absolute;
+    top:10px;
+    transform:rotate(-7deg);
+}
+.msg-public,.msg-private{
+    cursor: pointer;
+    padding: 5px;
+}
+._sheng_msgBtn:hover{
+    background: #9FC57C;
+    color:#FFF;
+}
+.msg-typehover{
+    background: #9FC57C;
+    color:#FFF;
+}
+.msg-mine{
+    display: block;
+}
+.about{
+    text-align: left;
+    float:left;
+    width: 400px;
+    height: 100px;
+}
+.about h3{
+    float:left;
+    padding-left: 20px;
+    display:block;
+    width: 100%;
+    height:28px;
+    line-height: 28px;
+    text-indent: 8px;
+/*    border:1px solid #ccc;
+    background: url(../img/bg_split.png) repeat-x;*/
+}
+.about p{
+    padding-left: 30px;
+    line-height: 24px;
+}
+.githubicon{
+    background: url(../img/github.png) center center;
+    background-position: 0px 1px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+.githubicon:hover{
+    background-position: 0px 15px;
+}
+/*wangzhisheng*/
+._sheng_liBox41:hover{
+   text-decoration: underline;
+}
